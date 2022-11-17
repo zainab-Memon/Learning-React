@@ -34,5 +34,22 @@
 - If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword: <br>
 - ![image](https://user-images.githubusercontent.com/88162824/202526295-235084bc-97f8-4456-8bf0-286c5b4dcc5f.png)
 - **Note:** This works only if the function has only one statement.
+### JS Modules 
+- JavaScript modules allow you to break up your code into separate files.
+- This makes it easier to maintain the code-base.
+- JavaScript modules rely on the import and export statements.
+- Modules only work with the HTTP(s) protocol.
+- A web-page opened via the file:// protocol cannot use import / export.
+#### Export
+- You can export a function or variable from any file.
+- There are two types of exports: Named and Default. <br>
+![image](https://user-images.githubusercontent.com/88162824/202528266-a8dbe9c9-4e2b-4e7a-beaf-7908f223c1f2.png)
+#### Import
+- You can import modules into a file in two ways, based on if they are named exports or default exports.
+- Named exports are constructed using curly braces. Default exports are not. <br>
+![image](https://user-images.githubusercontent.com/88162824/202528332-8ca703dd-4626-43db-bd48-be415c58e98c.png)
+### Classes
+- Classes are blueprints / templates for objects.
+- 
 ## Day 2: 18/11/2022
 
