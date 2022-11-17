@@ -23,5 +23,16 @@
 ### JS Functions 
 - A JavaScript function is a block of code designed to perform a particular task.
 - A JavaScript function is executed when "something" invokes it (calls it).
+- Syntax: <br>
+  function name(parameter1, parameter2, parameter3) { <br>
+  // code to be executed <br />
+}
+#### Arrow Function 
+- Arrow functions allow us to write shorter function syntax:
+-  Syntax: <br>
+-  ![image](https://user-images.githubusercontent.com/88162824/202526072-aa1c29f0-a253-4542-9b98-546be33e5da4.png)
+- If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword: <br>
+- ![image](https://user-images.githubusercontent.com/88162824/202526295-235084bc-97f8-4456-8bf0-286c5b4dcc5f.png)
+- **Note:** This works only if the function has only one statement.
 ## Day 2: 18/11/2022
 
