@@ -65,4 +65,5 @@
 ![image](https://user-images.githubusercontent.com/88162824/202757564-c00cb3c7-e8c3-41c2-9c27-b46670544984.png)
 #### Class Inheritance
 - Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
-- Using class inheritance, a class can inherit all the methods and properties of another class.
+- Using class inheritance, a class can inherit all the methods and properties of another class. <br>
+![image](https://user-images.githubusercontent.com/88162824/202761026-8db919d5-6e89-4706-8f07-a6785f99c0dc.png)
