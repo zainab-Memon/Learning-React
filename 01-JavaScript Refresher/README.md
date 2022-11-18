@@ -71,4 +71,6 @@
 ![image](https://user-images.githubusercontent.com/88162824/202762443-24e45b38-2f56-4179-a9c7-5848f791276b.png)
 - Example: <br>
 - ![image](https://user-images.githubusercontent.com/88162824/202762747-88376a07-5d73-47c7-917b-f968258f4f2d.png)
+### Spread and Rest Operator 
+![image](https://user-images.githubusercontent.com/88162824/202767444-9a8c71fd-7302-4c62-b475-6e24520b5e98.png)
 
