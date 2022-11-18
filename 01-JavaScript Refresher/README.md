@@ -67,3 +67,7 @@
 - Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
 - Using class inheritance, a class can inherit all the methods and properties of another class. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202761026-8db919d5-6e89-4706-8f07-a6785f99c0dc.png)
+#### Methods and Constructor in ES6 and ES7
+![image](https://user-images.githubusercontent.com/88162824/202762443-24e45b38-2f56-4179-a9c7-5848f791276b.png)
+- Example: <br>
+- 
