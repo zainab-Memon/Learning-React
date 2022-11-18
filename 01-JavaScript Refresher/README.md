@@ -70,4 +70,5 @@
 #### Methods and Constructor in ES6 and ES7
 ![image](https://user-images.githubusercontent.com/88162824/202762443-24e45b38-2f56-4179-a9c7-5848f791276b.png)
 - Example: <br>
-- 
+- ![image](https://user-images.githubusercontent.com/88162824/202762747-88376a07-5d73-47c7-917b-f968258f4f2d.png)
+
