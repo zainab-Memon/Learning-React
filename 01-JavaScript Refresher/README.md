@@ -48,8 +48,21 @@
 - You can import modules into a file in two ways, based on if they are named exports or default exports.
 - Named exports are constructed using curly braces. Default exports are not. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202528332-8ca703dd-4626-43db-bd48-be415c58e98c.png)
+## Day 2: 18/11/2022
 ### Classes
 - Classes are blueprints / templates for objects.
-- 
-## Day 2: 18/11/2022
-
+- You can think of the class as a sketch (prototype) of a house. 
+- It contains all the details about the floors, doors, windows, etc. 
+- Based on these descriptions, you build the house. House is the object.
+- Syntax: <br>
+![image](https://user-images.githubusercontent.com/88162824/202755105-6cca8ade-9be7-4d64-932c-3aab17ddb6bf.png)
+- Example:  <br>
+![image](https://user-images.githubusercontent.com/88162824/202755223-01ddcaf8-b51f-457c-8594-9824405bc348.png)
+- Classes can have methods as well. 
+- Methods are simply functions attached to classes.
+- Constructor is used to initialize object properties
+#### Creating Objects
+![image](https://user-images.githubusercontent.com/88162824/202757564-c00cb3c7-e8c3-41c2-9c27-b46670544984.png)
+#### Class Inheritance
+- Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
+- Using class inheritance, a class can inherit all the methods and properties of another class.
