@@ -114,5 +114,7 @@
 - Code: <br>
 ![image](https://user-images.githubusercontent.com/88162824/202848722-ac511dff-098e-4c40-b377-098ad3fa3f94.png) <br>
 - Output: <br>
-![image](https://user-images.githubusercontent.com/88162824/202848741-94ec87e9-564c-458b-b975-cce938c473a5.png)
+![image](https://user-images.githubusercontent.com/88162824/202848741-94ec87e9-564c-458b-b975-cce938c473a5.png) <br>
+![image](https://user-images.githubusercontent.com/88162824/202848818-31d0acc5-1174-400e-9fdb-f49552a02cd0.png)
+
 
