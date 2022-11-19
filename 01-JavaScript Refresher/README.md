@@ -34,6 +34,11 @@
 - If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword: <br>
 - ![image](https://user-images.githubusercontent.com/88162824/202526295-235084bc-97f8-4456-8bf0-286c5b4dcc5f.png)
 - **Note:** This works only if the function has only one statement.
+- **Important:**
+- When having no arguments, you have to use empty parentheses in the function declaration: <br>
+![image](https://user-images.githubusercontent.com/88162824/202855712-bbee657c-4a86-4eb7-bbf9-1004bd837e41.png)
+- When having exactly one argument, you may omit the parentheses: <br>
+![image](https://user-images.githubusercontent.com/88162824/202855777-ca977129-1294-4432-b8b6-abd9594e1821.png)
 ### JS Modules 
 - JavaScript modules allow you to break up your code into separate files.
 - This makes it easier to maintain the code-base.
