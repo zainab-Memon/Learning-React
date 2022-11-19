@@ -49,10 +49,14 @@
 - You can export a function or variable from any file.
 - There are two types of exports: Named and Default. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202528266-a8dbe9c9-4e2b-4e7a-beaf-7908f223c1f2.png)
+- A file can only contain one default and an unlimited amount of named exports.
 #### Import
 - You can import modules into a file in two ways, based on if they are named exports or default exports.
 - Named exports are constructed using curly braces. Default exports are not. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202528332-8ca703dd-4626-43db-bd48-be415c58e98c.png)
+- When importing named exports, you can also import all named exports at once with the following syntax:
+- import * as upToYou from './path/to/file.js
+- 
 ## Day 2: 18/11/2022
 ### Classes
 - Classes are blueprints / templates for objects.
@@ -77,6 +81,8 @@
 - Example: <br> 
 ![image](https://user-images.githubusercontent.com/88162824/202762747-88376a07-5d73-47c7-917b-f968258f4f2d.png)
 ### Spread and Rest Operator 
+- The spread operator is extremely useful for cloning arrays and objects.Since both are reference types (and not primitives), copying them safely (i.e. preventing future mutation of the copied original)can be tricky. 
+- With the spread operator you have an easy way of creating a (shallow!) clone of the object or array.
 ![image](https://user-images.githubusercontent.com/88162824/202767444-9a8c71fd-7302-4c62-b475-6e24520b5e98.png)
 - Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/202767952-81eb0a7f-9c44-49bc-b775-22bcd071fb9a.png)
