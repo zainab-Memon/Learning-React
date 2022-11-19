@@ -127,5 +127,11 @@
 - Output: <br>
 ![image](https://user-images.githubusercontent.com/88162824/202848741-94ec87e9-564c-458b-b975-cce938c473a5.png) <br>
 ![image](https://user-images.githubusercontent.com/88162824/202848818-31d0acc5-1174-400e-9fdb-f49552a02cd0.png)
+### Arrays 
+- An array is a special variable, which can hold more than one value. <br>
+![image](https://user-images.githubusercontent.com/88162824/202856585-6cb3cf10-ef2e-4054-8781-52b694a3dee2.png)
+#### How to Recognize an Array
+![image](https://user-images.githubusercontent.com/88162824/202856797-d8778163-d055-443a-bb53-0c5bf086bef6.png)
+
 
 
