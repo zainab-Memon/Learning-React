@@ -79,4 +79,39 @@
 - The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 - Example:  <br>
 ![image](https://user-images.githubusercontent.com/88162824/202774566-053f6478-075f-4bc6-a877-6511fdfc54a5.png)
+## Day 3: 19/11/2022
+### Primitive Data Types 
+- In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. 
+- There are 7 primitive data types:
+  - string
+  - number
+  - bigint
+  - boolean
+  - undefined
+  - symbol
+  - null
+- A primitive data type in JavaScript, it is stored on a stack. 
+- A primitive data type on the stack is identified by the variable name you used for declaration in your program. With each primitive data type you create, data is added to the stack.
+- **Example:** 
+- Declare a variable named "num1" and assign value of 1 to it.
+- Let's declare another variable named "num2" and assign "num1" to it, so now num2= 1 as well. 
+- So both variables have the same value.
+- What happens on the stack is that, the computer creates room for num1 and stores its assigned value on the stack. 
+- When num2 is created, the computer again creates room, and stores 1 on the stack. 
+- It does not matter that both variables are assigned the same value.
+- **What if during the coding process, we decided to update the value of num1 to say, 100? Does it mean num2 will change too? The answer is no.**
+- Since num1 and num2 were stored differently on the stack, updating one of them will not affect the other
+- So, in effect, the two variables have no relationship to each other. It means primitive data types do not point to any other variable rather just copy their content, if assigned. 
+- **Code:** <br>
+![image](https://user-images.githubusercontent.com/88162824/202848542-196044b4-a8ec-4269-b754-c9598c3324e0.png)
+### Reference Data Types
+- Reference data types are dynamic in nature. That is, they do not have a fixed size.
+- Most of them are considered as objects, and therefore have methods. 
+- Examples of such data types include arrays, functions, collections, and all other types of objects.
+- The difference comes in when the computer has to store a reference data type. 
+- When you create a variable and assign it a value that is a reference data type, the computer does not directly store that data type in that variable (as is the case with primitive types).
+- What you have assigned to that variable is a pointer that points to the location of that data type in memory.
+- Code: <br>
+![image](https://user-images.githubusercontent.com/88162824/202848722-ac511dff-098e-4c40-b377-098ad3fa3f94.png)
+![image](https://user-images.githubusercontent.com/88162824/202848741-94ec87e9-564c-458b-b975-cce938c473a5.png)
 
