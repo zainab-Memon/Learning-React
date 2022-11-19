@@ -132,6 +132,12 @@
 ![image](https://user-images.githubusercontent.com/88162824/202856585-6cb3cf10-ef2e-4054-8781-52b694a3dee2.png)
 #### How to Recognize an Array
 ![image](https://user-images.githubusercontent.com/88162824/202856797-d8778163-d055-443a-bb53-0c5bf086bef6.png)
-
-
+#### Array Methods 
+##### map 
+- map() creates a new array from calling a function for every array element.
+- map() calls a function once for each element in an array.
+- map() does not execute the function for empty elements.
+- map() does not change the original array.
+- **Example:** <br>
+![image](https://user-images.githubusercontent.com/88162824/202859470-25eefc1e-f083-4c52-95cf-090921018c48.png)
 
