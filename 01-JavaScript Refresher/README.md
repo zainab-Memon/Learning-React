@@ -139,5 +139,7 @@
 - map() does not execute the function for empty elements.
 - map() does not change the original array.
 - **Example:** <br>
-![image](https://user-images.githubusercontent.com/88162824/202859470-25eefc1e-f083-4c52-95cf-090921018c48.png)
+![image](https://user-images.githubusercontent.com/88162824/202859470-25eefc1e-f083-4c52-95cf-090921018c48.png) <br>
+![image](https://user-images.githubusercontent.com/88162824/202859620-46eb7d95-1990-40fb-83ea-98cc36f66d1c.png)
+
 
