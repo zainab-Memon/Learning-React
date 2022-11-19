@@ -112,6 +112,7 @@
 - When you create a variable and assign it a value that is a reference data type, the computer does not directly store that data type in that variable (as is the case with primitive types).
 - What you have assigned to that variable is a pointer that points to the location of that data type in memory.
 - Code: <br>
-![image](https://user-images.githubusercontent.com/88162824/202848722-ac511dff-098e-4c40-b377-098ad3fa3f94.png)
+![image](https://user-images.githubusercontent.com/88162824/202848722-ac511dff-098e-4c40-b377-098ad3fa3f94.png) <br>
+- Output: <br>
 ![image](https://user-images.githubusercontent.com/88162824/202848741-94ec87e9-564c-458b-b975-cce938c473a5.png)
 
