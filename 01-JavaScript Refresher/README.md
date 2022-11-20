@@ -157,6 +157,11 @@
 - The findIndex() method returns the index of the first element in an array that satisfies the provided testing function. 
 - If no elements satisfy the testing function, -1 is returned.<br>
 ![image](https://user-images.githubusercontent.com/88162824/202894356-aab3f464-526f-4fe5-a1e1-8033f806e547.png)
+##### reduce()
+- The reduce() method executes a reducer function for array element.
+- The reduce() method returns a single value: the function's accumulated result.
+- The reduce() method does not execute the function for empty array elements.
+- The reduce() method does not change the original array.<br>
 
 
 
