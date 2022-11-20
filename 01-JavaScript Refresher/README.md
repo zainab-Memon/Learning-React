@@ -175,6 +175,11 @@
 ![image](https://user-images.githubusercontent.com/88162824/202896085-2eb3d75a-5f7d-4d4e-b3fa-f3eb3a4b3a5c.png)<br>
 - Using negative indices <br>
 ![image](https://user-images.githubusercontent.com/88162824/202896201-9a944430-e173-4cb6-91cb-cd686128183d.png)
+##### splice()
+- The splice() method adds and/or removes array elements.
+- The splice() method overwrites the original array.
+- syntax: array.splice(index, howmanyitems to be removed, ADDitem1, ....., itemX)<br>
+![image](https://user-images.githubusercontent.com/88162824/202896727-ee55a2d2-b7c7-4731-b6ae-ce475e27b7e8.png)
 
 
 
