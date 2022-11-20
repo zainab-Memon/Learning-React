@@ -133,7 +133,7 @@
 #### How to Recognize an Array
 ![image](https://user-images.githubusercontent.com/88162824/202856797-d8778163-d055-443a-bb53-0c5bf086bef6.png)
 #### Array Methods 
-##### map 
+##### map()
 - map() creates a new array from calling a function for every array element.
 - map() calls a function once for each element in an array.
 - map() does not execute the function for empty elements.
@@ -141,5 +141,23 @@
 - **Example:** <br>
 ![image](https://user-images.githubusercontent.com/88162824/202859470-25eefc1e-f083-4c52-95cf-090921018c48.png) <br>
 ![image](https://user-images.githubusercontent.com/88162824/202859620-46eb7d95-1990-40fb-83ea-98cc36f66d1c.png)
+##### find()
+- The find() method returns the value of the first element that satisfies the provided testing function.
+- The find() method executes a function for each array element.
+- The find() method returns undefined if no elements are found.
+- The find() method does not execute the function for empty elements.
+- The find() method does not change the original array. <br>
+![image](https://user-images.githubusercontent.com/88162824/202893905-e9fd1337-32d8-42af-a053-ab4826b362df.png)
+##### filter()
+- The filter() method creates a new array filled with elements that pass a test provided by a function.
+- The filter() method does not execute the function for empty elements.
+- The filter() method does not change the original array <br>
+![image](https://user-images.githubusercontent.com/88162824/202894250-f3429ee0-1bfe-4d54-bb00-a02209911e73.png)
+##### findIndex()
+- The findIndex() method returns the index of the first element in an array that satisfies the provided testing function. 
+- If no elements satisfy the testing function, -1 is returned.<br>
+![image](https://user-images.githubusercontent.com/88162824/202894356-aab3f464-526f-4fe5-a1e1-8033f806e547.png)
+
+
 
 
