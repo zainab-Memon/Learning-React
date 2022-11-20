@@ -163,6 +163,11 @@
 - The reduce() method does not execute the function for empty array elements.
 - The reduce() method does not change the original array.<br>
 ![image](https://user-images.githubusercontent.com/88162824/202895007-1ee8a022-13bb-40e9-bc87-dc28c007edc7.png)
+##### concat()
+- The concat() method concatenates (joins) two or more arrays.
+- The concat() method returns a new array, containing the joined arrays.
+- The concat() method does not change the existing arrays. <br>
+![image](https://user-images.githubusercontent.com/88162824/202895428-34fc6476-88e8-4c57-aa56-33c79d43ea88.png)
 
 
 
