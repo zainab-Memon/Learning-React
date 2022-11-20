@@ -168,6 +168,14 @@
 - The concat() method returns a new array, containing the joined arrays.
 - The concat() method does not change the existing arrays. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202895428-34fc6476-88e8-4c57-aa56-33c79d43ea88.png)
+#### slice()
+- The slice() method returns selected elements in an array, as a new array.
+- The slice() method selects from a given start, up to a (not inclusive) given end.
+- The slice() method does not change the original array. <br>
+![image](https://user-images.githubusercontent.com/88162824/202896085-2eb3d75a-5f7d-4d4e-b3fa-f3eb3a4b3a5c.png)<br>
+- Using negative indices <br>
+![image](https://user-images.githubusercontent.com/88162824/202896201-9a944430-e173-4cb6-91cb-cd686128183d.png)
+
 
 
 
