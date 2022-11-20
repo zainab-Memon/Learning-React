@@ -162,6 +162,7 @@
 - The reduce() method returns a single value: the function's accumulated result.
 - The reduce() method does not execute the function for empty array elements.
 - The reduce() method does not change the original array.<br>
+![image](https://user-images.githubusercontent.com/88162824/202895007-1ee8a022-13bb-40e9-bc87-dc28c007edc7.png)
 
 
 
