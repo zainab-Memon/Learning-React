@@ -184,9 +184,11 @@
 ### Callbacks 
 - A callback is a function passed as an argument to another function.
 - This technique allows a function to call another function.
-- A callback function can run after another function has finished. <br>
+- A callback function can run after another function has finished.  <br>
 ![image](https://user-images.githubusercontent.com/88162824/203042693-55ede3e7-6970-4b96-82ed-0721f441a5b8.png)
 #### Need of callbacks 
+- Callbacks functions are used to acquire control over the sequence of execution. 
+- Generally, functions are executed on the basis of the sequence that they are invoked, not on the sequence in which they are defined
 - A callback's primary purpose is to execute code in response to an event. 
 - These events might be user-initiated, such as mouse clicks or typing. 
 - With a callback, you may instruct your application to "execute this code every time the user clicks a key on the keyboard."
@@ -232,7 +234,7 @@
   - When a Promise object is "fulfilled", the result is a value.
   - When a Promise object is "rejected", the result is an error object.
 #### then(), catch(), and final ()
-- Promises have the then, catch and finally methods for doing different things depending on the outcome of a promise.
+- Promises have the then, catch and finally methods for doing different things depending on the outcome of a promise, or to use the promise object. 
   - then: when a promise is successful, you can then use the resolved data
   - catch: when a promise fails, you catch the error, and do something with the error information
   - finally: when a promise settles (fails or passes), you can finally do something
