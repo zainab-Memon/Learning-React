@@ -208,9 +208,18 @@
 - With asynchronous programming, JavaScript programs can start long-running tasks, and continue running other tasks in parallell.
 - But, asynchronus programmes are difficult to write and difficult to debug.
 - Because of this, most modern asynchronous JavaScript methods don't use callbacks. 
+- Having multiple callbacks in the code increases the complexity of the code in terms of readability, executability, and many other terms.
+- This excessive nesting of callbacks is often termed Callback Hell. 
 - Instead, in JavaScript, asynchronous programming is solved using Promises instead.
 ### Promises in JS
-
+- In JavaScript, a promise is a good way to handle asynchronous operations. It is used to find out if the asynchronous operation is successfully completed or not.
+- A promise may have one of three states.
+  - Pending 
+  - Fulfilled
+  - Rejected
+- A promise starts in a pending state. That means the process is not complete. 
+- If the operation is successful, the process ends in a fulfilled state. 
+- And, if an error occurs, the process ends in a rejected state.
 
 
 
