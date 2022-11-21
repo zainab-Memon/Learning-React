@@ -225,6 +225,8 @@
   - The Promise() constructor takes a function as an argument. The function also accepts two functions resolve() and reject().
   - If the promise returns successfully, the resolve() function is called. And, if an error occurs, the reject() function is called.
 - Example: <br>
-  ![image](https://user-images.githubusercontent.com/88162824/203062138-0c30d04a-9aef-4d08-9dad-98ef21b3cfc4.png)
+  ![image](https://user-images.githubusercontent.com/88162824/203062138-0c30d04a-9aef-4d08-9dad-98ef21b3cfc4.png)<br>
+  ![image](https://user-images.githubusercontent.com/88162824/203062206-a3c5ca24-a086-419b-b1d3-cfb1515860a1.png)
+
 
 
