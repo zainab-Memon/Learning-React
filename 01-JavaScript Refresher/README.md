@@ -243,3 +243,8 @@
 - The first one is invoked if the promise is fulfilled and the second one(optional) is invoked if the promise is rejected. 
 - Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203069318-291c20b6-e4a7-43a0-868e-9169f5cd9777.png)
+#### catch()
+- catch() can be used for handling the errors(if any). 
+- It takes only one function as a parameter which is used to handle the errors (if any). 
+- Example: <br>
+  ![image](https://user-images.githubusercontent.com/88162824/203070687-db25e155-0309-4786-a217-085d0136f6db.png)
