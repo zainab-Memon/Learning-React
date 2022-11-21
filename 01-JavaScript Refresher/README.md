@@ -248,3 +248,14 @@
 - It takes only one function as a parameter which is used to handle the errors (if any). 
 - Example: <br>
   ![image](https://user-images.githubusercontent.com/88162824/203070687-db25e155-0309-4786-a217-085d0136f6db.png)
+### async()
+- We use the async keyword with a function to represent that the function is an asynchronous function. 
+- The async function returns a promise. <br>
+  ![image](https://user-images.githubusercontent.com/88162824/203075626-fc77b1b1-9187-4b19-8069-74d623a2efd1.png)
+### await()
+- The await keyword can only be used inside an async function.
+- The await keyword makes the function pause the execution and wait for a resolved/rejected promise before it continues
+- The async function allows the asynchronous method to be executed in a seemingly synchronous way. 
+- Though the operation is asynchronous, it seems that the operation is executed in synchronous manner.
+- Example: <br>
+![image](https://user-images.githubusercontent.com/88162824/203078083-38192003-0f0f-49f8-a755-52e32ca6b517.png)
