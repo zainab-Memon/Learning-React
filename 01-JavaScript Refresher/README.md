@@ -180,6 +180,12 @@
 - The splice() method overwrites the original array.
 - syntax: array.splice(index, howmanyitems to be removed, ADDitem1, ....., itemX)<br>
 ![image](https://user-images.githubusercontent.com/88162824/202896727-ee55a2d2-b7c7-4731-b6ae-ce475e27b7e8.png)
+## Day 3: 21/11/2022
+### Callbacks 
+- A callback is a function passed as an argument to another function.
+- This technique allows a function to call another function.
+- A callback function can run after another function has finished. <br>
+![image](https://user-images.githubusercontent.com/88162824/203039190-11ec7a84-7fe6-439a-a9e2-c95aa42b2bef.png)
 
 
 
