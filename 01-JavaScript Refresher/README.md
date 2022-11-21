@@ -231,5 +231,15 @@
   - While a Promise object is "pending" (working), the result is undefined.
   - When a Promise object is "fulfilled", the result is a value.
   - When a Promise object is "rejected", the result is an error object.
-
-
+#### then(), catch(), and final ()
+- Promises have the then, catch and finally methods for doing different things depending on the outcome of a promise.
+  - then: when a promise is successful, you can then use the resolved data
+  - catch: when a promise fails, you catch the error, and do something with the error information
+  - finally: when a promise settles (fails or passes), you can finally do something
+##### then()
+- Invoked when a promise is kept or broken. 
+- It can be chained to handle the fulfillment or rejection of a promise. 
+- It takes in two functions as parameters. 
+- The first one is invoked if the promise is fulfilled and the second one(optional) is invoked if the promise is rejected. 
+- Example: <br>
+![image](https://user-images.githubusercontent.com/88162824/203069318-291c20b6-e4a7-43a0-868e-9169f5cd9777.png)
