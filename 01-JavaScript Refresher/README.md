@@ -227,6 +227,9 @@
 - Example: <br>
   ![image](https://user-images.githubusercontent.com/88162824/203062138-0c30d04a-9aef-4d08-9dad-98ef21b3cfc4.png)<br>
   ![image](https://user-images.githubusercontent.com/88162824/203062206-a3c5ca24-a086-419b-b1d3-cfb1515860a1.png)
-
+- The Promise object supports two properties: state and result.
+  - While a Promise object is "pending" (working), the result is undefined.
+  - When a Promise object is "fulfilled", the result is a value.
+  - When a Promise object is "rejected", the result is an error object.
 
 
