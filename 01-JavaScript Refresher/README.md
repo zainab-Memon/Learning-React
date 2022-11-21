@@ -204,7 +204,12 @@
 - The setTimeout() method executes the greet() function only after 2 seconds. 
 - However, the sayName() function waits for the execution of the greet() function.
 #### Synchronous VS Asynchronous in JS 
-![image](https://user-images.githubusercontent.com/88162824/203052065-288d4ea8-0990-49c6-9884-898144725dfc.png)
+![image](https://user-images.githubusercontent.com/88162824/203052065-288d4ea8-0990-49c6-9884-898144725dfc.png) <BR>
+- With asynchronous programming, JavaScript programs can start long-running tasks, and continue running other tasks in parallell.
+- But, asynchronus programmes are difficult to write and difficult to debug.
+- Because of this, most modern asynchronous JavaScript methods don't use callbacks. 
+- Instead, in JavaScript, asynchronous programming is solved using Promises instead.
+### Promises in JS
 
 
 
