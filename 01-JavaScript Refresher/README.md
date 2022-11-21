@@ -185,8 +185,26 @@
 - A callback is a function passed as an argument to another function.
 - This technique allows a function to call another function.
 - A callback function can run after another function has finished. <br>
-![image](https://user-images.githubusercontent.com/88162824/203039190-11ec7a84-7fe6-439a-a9e2-c95aa42b2bef.png)
-
+![image](https://user-images.githubusercontent.com/88162824/203042693-55ede3e7-6970-4b96-82ed-0721f441a5b8.png)
+#### Need of callbacks 
+- A callback's primary purpose is to execute code in response to an event. 
+- These events might be user-initiated, such as mouse clicks or typing. 
+- With a callback, you may instruct your application to "execute this code every time the user clicks a key on the keyboard."
+- The benefit of using a callback function is that you can wait for the result of a previous function call and then execute another function call. 
+- Example: <br>
+![image](https://user-images.githubusercontent.com/88162824/203046443-66a5889f-3891-4b1a-9e09-0b15b31819a3.png)
+- Here, the greet() function is called after 2000 milliseconds (2 seconds). 
+- During this wait, the sayName('John'); is executed. 
+- That is why Hello John is printed before Hello world.
+- The above code is executed asynchronously (the second function; sayName() does not wait for the first function; greet() to complete).
+- However, if you want to wait for the result of the previous function call before the next statement is executed, you can use a callback function.
+- Example: <br>
+![image](https://user-images.githubusercontent.com/88162824/203046691-de6c60a8-9be8-4673-a3cf-72c3190a5fbe.png)
+- In the above program, the code is executed synchronously. The sayName() function is passed as an argument to the greet() function.
+- The setTimeout() method executes the greet() function only after 2 seconds. 
+- However, the sayName() function waits for the execution of the greet() function.
+#### Synchronous VS Asynchronous in JS 
+![image](https://user-images.githubusercontent.com/88162824/203052065-288d4ea8-0990-49c6-9884-898144725dfc.png)
 
 
 
