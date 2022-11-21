@@ -220,9 +220,11 @@
 - A promise starts in a pending state. That means the process is not complete. 
 - If the operation is successful, the process ends in a fulfilled state. 
 - And, if an error occurs, the process ends in a rejected state.
-- **Syntax:** const promise = new Promise((resolve,reject) => {....});
+- **Syntax:** let promise = new Promise((resolve,reject) => {....});
   - To create a promise object, we use the Promise() constructor.
   - The Promise() constructor takes a function as an argument. The function also accepts two functions resolve() and reject().
   - If the promise returns successfully, the resolve() function is called. And, if an error occurs, the reject() function is called.
+- Example: <br>
+  ![image](https://user-images.githubusercontent.com/88162824/203062138-0c30d04a-9aef-4d08-9dad-98ef21b3cfc4.png)
 
 
