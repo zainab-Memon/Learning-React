@@ -51,10 +51,14 @@
 - Now, I have to import it in App.js component file like this. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203311022-638b4f31-f652-4016-8433-bf288726f55f.png)
 ## Adding Basic CSS Styling In A Component 
-1. Create a css file.
+- There are many ways to style React with CSS,let's take a closer look at three common ways:
+### Inline Styling:
+![image](https://user-images.githubusercontent.com/88162824/203353982-3af93ba5-2adf-49b8-b2d5-bef54e9be98a.png)
+### CSS Stylesheets
+1. Create a css stylesheet with .css extension
 2. Import that css file to the component file to implement the styling on that component. 
 Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203341336-ed9f1e20-6058-4024-8ab9-f9803c450fb8.png)
-
+### CSS Modules
 
 
