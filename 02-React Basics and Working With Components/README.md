@@ -69,4 +69,4 @@ Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203367665-d49e512d-934b-443a-b1bd-d7dd2b4aae48.png)
 - Retrieve these values in the component itself. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203367867-361e5eef-4641-4015-9a5d-9018681c6047.png)
-
+## Splitting 
