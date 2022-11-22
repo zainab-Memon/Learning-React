@@ -39,6 +39,14 @@
 - This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
 - The component also requires a render() method, this method returns HTML. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203308128-76103033-4e89-4665-bca1-94afb8b48358.png)
-#### Function Component 
+### Function Component 
 - A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203308289-9eb39d4f-65b1-4108-86d8-128c038832b5.png)
+### Rendering Component 
+- Now to use the components that we just created, we have to render that component in index.js file if it's the root component, however if it is other than that you can use that component as a custom HTML tag in app component by exporting/importing it in the app.js file. 
+- Eg: I have created this component in a separate file. <br>
+![image](https://user-images.githubusercontent.com/88162824/203310660-aedda14a-1f9b-410f-88e4-c5b1dac1548f.png) <br>
+- Now, I have to import it in App.js component file like this. <br>
+![image](https://user-images.githubusercontent.com/88162824/203311022-638b4f31-f652-4016-8433-bf288726f55f.png)
+
+
