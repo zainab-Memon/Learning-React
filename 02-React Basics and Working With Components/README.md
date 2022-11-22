@@ -32,3 +32,13 @@
 - JSX will execute the expression and return the result: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203288992-4b8a8133-afb7-4047-af03-1ed46471ae74.png)
 ## Building React Components 
+- When creating a React component, the component's name MUST start with an upper case letter.
+- There are two types of components named class components and function components. 
+### Class Component 
+- A class component must include the extends React.Component statement. 
+- This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
+- The component also requires a render() method, this method returns HTML. <br>
+![image](https://user-images.githubusercontent.com/88162824/203308128-76103033-4e89-4665-bca1-94afb8b48358.png)
+#### Function Component 
+- A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand. <br>
+![image](https://user-images.githubusercontent.com/88162824/203308289-9eb39d4f-65b1-4108-86d8-128c038832b5.png)
