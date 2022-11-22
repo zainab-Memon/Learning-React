@@ -12,4 +12,8 @@
 - React allows you to create re-usable and reactive components consisting of HTML, JS and CSS.
 ![image](https://user-images.githubusercontent.com/88162824/203122222-44df8ad9-981e-4596-86be-604dbd2af75e.png)
 # Day 4: 22/11/2022 
-
+## Render HTML
+- React renders HTML to the web page by using a function called ReactDOM.render().
+- The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+- The purpose of the function is to display the specified HTML code inside the specified HTML element. <br>
+![image](https://user-images.githubusercontent.com/88162824/203288093-139fd50f-76e8-46d1-9024-8cb3fc44d968.png)
