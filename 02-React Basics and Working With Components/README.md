@@ -31,6 +31,8 @@
 - The expression can be a React variable, or property, or any other valid JavaScript expression. 
 - JSX will execute the expression and return the result: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203288992-4b8a8133-afb7-4047-af03-1ed46471ae74.png)
+- The HTML code in JSX, should always be wrapped in ONE top level element.
+- The way h2 tag is wrapped in a div in above code snippet.
 ## Building React Components 
 - When creating a React component, the component's name MUST start with an upper case letter.
 - There are two types of components named class components and function components. 
