@@ -50,5 +50,6 @@
 ![image](https://user-images.githubusercontent.com/88162824/203310660-aedda14a-1f9b-410f-88e4-c5b1dac1548f.png) <br>
 - Now, I have to import it in App.js component file like this. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203311022-638b4f31-f652-4016-8433-bf288726f55f.png)
+## Adding Basic CSS Styling In A Component 
 
 
