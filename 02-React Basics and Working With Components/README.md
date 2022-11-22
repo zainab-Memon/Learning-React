@@ -15,8 +15,11 @@
 ## Render HTML
 - React renders HTML to the web page by using a function called ReactDOM.render().
 - The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
-- The purpose of the function is to display the specified HTML code inside the specified HTML element. <br>
-![image](https://user-images.githubusercontent.com/88162824/203288093-139fd50f-76e8-46d1-9024-8cb3fc44d968.png)
+- The purpose of the function is to display the specified HTML code inside the specified HTML element. 
+- **Older syntax:** <br>
+![image](https://user-images.githubusercontent.com/88162824/203288093-139fd50f-76e8-46d1-9024-8cb3fc44d968.png) <br>
+- **New Syntax:** <br>
+![image](https://user-images.githubusercontent.com/88162824/203295315-af18c953-2b97-4a14-bb16-a174c8193c6a.png)
 ## JSX
 - JSX stands for JavaScript XML.
 - JSX allows us to write HTML in React.
