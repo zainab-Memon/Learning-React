@@ -17,3 +17,14 @@
 - The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
 - The purpose of the function is to display the specified HTML code inside the specified HTML element. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203288093-139fd50f-76e8-46d1-9024-8cb3fc44d968.png)
+## JSX
+- JSX stands for JavaScript XML.
+- JSX allows us to write HTML in React.
+- JSX allows us to write HTML elements in JavaScript and place them in the DOM 
+- JSX converts HTML tags into react elements.
+- Example: <br>
+![image](https://user-images.githubusercontent.com/88162824/203288866-e909f187-cd45-4e2d-8796-bcd53b6c6eef.png)
+- With JSX you can write expressions inside curly braces { }.
+- The expression can be a React variable, or property, or any other valid JavaScript expression. 
+- JSX will execute the expression and return the result: <br>
+![image](https://user-images.githubusercontent.com/88162824/203288992-4b8a8133-afb7-4047-af03-1ed46471ae74.png)
