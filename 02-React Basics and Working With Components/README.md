@@ -60,5 +60,13 @@
 Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/203341336-ed9f1e20-6058-4024-8ab9-f9803c450fb8.png)
 ### CSS Modules
-
+## React Props 
+- Props stands for properties.
+- Props are arguments passed into React components.
+- Props are passed to components via HTML attributes.
+### Passing Data Via Props 
+- Specify the prop as an attribute of the custom HTML tag and assign a value to it. <br>
+![image](https://user-images.githubusercontent.com/88162824/203367665-d49e512d-934b-443a-b1bd-d7dd2b4aae48.png)
+- Retrieve these values in the component itself. <br>
+![image](https://user-images.githubusercontent.com/88162824/203367867-361e5eef-4641-4015-9a5d-9018681c6047.png)
 
