@@ -172,3 +172,12 @@
 - We could build our whole app in a single React component and render all the content together in the same function. 
 - However, following this approach would not be the best choice as we would not be taking all the advantage of building reusable and modular components. 
 - Instead of having all our DOM elements living in the same React component it is better to break it down into multiple components.
+## Composition (props.children)
+- Composition is the act of combining parts or elements to form a whole.
+- When building an application using React, it is usually the case that developers will want to re-use component code.
+### children 
+- The children, in React, refer to the generic box whose contents are unknown until they’re passed from the parent component.
+- What does this mean? It simply means that the component will display whatever is included in between the opening and closing tags while invoking the component. 
+- Essentially, props.children is a special prop, automatically passed to every component, that can be used to render the content included between the opening and closing tags when invoking a component. 
+- These kinds of components are identified by the official documentation as “boxes”.
+- [Find more](https://medium.com/swlh/using-props-children-with-react-function-components-728fd48ed42f)
