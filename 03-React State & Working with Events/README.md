@@ -62,3 +62,19 @@
 #####  Update State
 - To update our state, we use our state updater function.
 - We should never directly update state. Ex: title = "new" is not allowed.
+   ```jsx
+    import React, { useState } from "react";
+    const ExpenseItems = (props) => {
+      const [title, setTitle] = useState(props.title);
+      const clickHandler = () => {
+          setTitle("Updated!"); //Assigning a new value/title as an arg
+        };
+        return (
+           <div>
+              <h2>{title}</h2>
+           </div>
+           <button onClick={clickHandler}>Change Title</button>
+        );
+      };
+    export default ExpenseItems;
+   ```
