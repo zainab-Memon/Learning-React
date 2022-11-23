@@ -59,3 +59,5 @@
      };
    export default ExpenseItems;
   ```
+#####  Update State
+- To update our state, we use our state updater function.
