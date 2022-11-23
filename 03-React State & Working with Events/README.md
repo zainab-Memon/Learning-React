@@ -61,3 +61,4 @@
   ```
 #####  Update State
 - To update our state, we use our state updater function.
+- We should never directly update state. Ex: title = "new" is not allowed.
