@@ -1,1 +1,2 @@
-All the concepts from the theory notes are demonstrated in these code files. 
+- All the concepts related to basics of React and working with components are applied in this project code, however the advanced concepts of React are applied in the code files of each chapter. 
+- At the end of this course, you can find a complete code of this project.
