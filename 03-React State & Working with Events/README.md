@@ -48,8 +48,8 @@
 ##### Read State
 - We can now include our state anywhere in our component.
   ```jsx
-  import React, { useState } from "react";
-  const ExpenseItems = (props) => {
+   import React, { useState } from "react";
+   const ExpenseItems = (props) => {
      const [title, setTitle] = useState(props.title);
      return (
           <div>
@@ -57,5 +57,5 @@
           </div>
         );
      };
-     export default ExpenseItems;
+   export default ExpenseItems;
   ```
