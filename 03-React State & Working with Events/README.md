@@ -24,3 +24,15 @@
   2. Hooks can only be called at the top level of a component.
   3. Hooks cannot be conditional
 ### 1. useState 
+- The React useState Hook allows us to track state in a function component.
+- State generally refers to data or properties that need to be tracking in an application.
+### Import useState:
+- To use the useState Hook, we first need to import it into our component.  
+    ```jsx
+     import React, { useState } from "react";
+    ```
+### Initialize useState
+- We initialize our state by calling useState in our function component.
+- useState accepts an initial state and returns two values:
+  1. The current state.
+  2. A function that updates the state.
