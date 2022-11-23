@@ -39,6 +39,7 @@
   ```jsx
      import React, { useState } from "react";
      const ExpenseItems = (props) => {
-     const [title, setTitle] = useState(props.title);
-     console.log("ExpenseItem evaluated by React");
+       const [title, setTitle] = useState(props.title);
+       console.log("ExpenseItem evaluated by React");
+      } 
   ```
