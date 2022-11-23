@@ -17,20 +17,39 @@
 - The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
 - The purpose of the function is to display the specified HTML code inside the specified HTML element. 
 - **Older syntax:** <br>
-![image](https://user-images.githubusercontent.com/88162824/203288093-139fd50f-76e8-46d1-9024-8cb3fc44d968.png) <br>
+  ```jsx
+  ReactDOM.render(<App />, document.getElementById("root"));
+    ```
 - **New Syntax:** <br>
-![image](https://user-images.githubusercontent.com/88162824/203295315-af18c953-2b97-4a14-bb16-a174c8193c6a.png)
+  ```jsx
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+  ```
 ## JSX
 - JSX stands for JavaScript XML.
 - JSX allows us to write HTML in React.
 - JSX allows us to write HTML elements in JavaScript and place them in the DOM 
 - JSX converts HTML tags into react elements.
 - Example: <br>
-![image](https://user-images.githubusercontent.com/88162824/203288866-e909f187-cd45-4e2d-8796-bcd53b6c6eef.png)
+  ```jsx
+  function App() {
+  return (
+    <div>
+      <h2>Let's get started!</h2>
+    </div>
+  );
+  }
+  ```
 - With JSX you can write expressions inside curly braces { }.
 - The expression can be a React variable, or property, or any other valid JavaScript expression. 
 - JSX will execute the expression and return the result: <br>
-![image](https://user-images.githubusercontent.com/88162824/203288992-4b8a8133-afb7-4047-af03-1ed46471ae74.png)
+  ```jsx
+  const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
+  ```
 - The HTML code in JSX, should always be wrapped in ONE top level element.
 - The way h2 tag is wrapped in a div in above code snippet.
 ## Building React Components 
@@ -40,25 +59,68 @@
 - A class component must include the extends React.Component statement. 
 - This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
 - The component also requires a render() method, this method returns HTML. <br>
-![image](https://user-images.githubusercontent.com/88162824/203308128-76103033-4e89-4665-bca1-94afb8b48358.png)
+  ```jsx
+   class Car extends React.Component {
+   render() {
+    return <h2>Hi, I am a Car!</h2>;
+     }
+   }
+  ```
 ### Function Component 
 - A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand. <br>
-![image](https://user-images.githubusercontent.com/88162824/203308289-9eb39d4f-65b1-4108-86d8-128c038832b5.png)
+    ```jsx
+     function Car() {
+     return <h2>Hi, I am a Car!</h2>;
+     }
+   ```
 ### Rendering Component 
 - Now to use the components that we just created, we have to render that component in index.js file if it's the root component, however if it is other than that you can use that component as a custom HTML tag in app component by exporting/importing it in the app.js file. 
 - Eg: I have created this component in a separate file. <br>
-![image](https://user-images.githubusercontent.com/88162824/203310660-aedda14a-1f9b-410f-88e4-c5b1dac1548f.png) <br>
+    ```jsx
+     function ExpenseItems() {
+     return
+     <h2>Expense Items</h2>;
+      }
+     export default ExpenseItems;
+  ```
 - Now, I have to import it in App.js component file like this. <br>
-![image](https://user-images.githubusercontent.com/88162824/203311022-638b4f31-f652-4016-8433-bf288726f55f.png)
+  ```jsx
+   import Expenses from "./components/Expenses";
+   function App() {
+      return (
+        <div>
+          <h2>Let's get started!</h2>
+          <ExpenseItems></ExpenseItems> 
+        </div>
+     );
+   }
+   export default App;
+  ```
 ## Adding Basic CSS Styling In A Component 
 - There are many ways to style React with CSS,let's take a closer look at three common ways:
 ### Inline Styling:
-![image](https://user-images.githubusercontent.com/88162824/203353982-3af93ba5-2adf-49b8-b2d5-bef54e9be98a.png)
+  ```jsx
+   <div style={{color:"red"}}></div>
+  ```
 ### CSS Stylesheets
 1. Create a css stylesheet with .css extension
 2. Import that css file to the component file to implement the styling on that component. 
-Example: <br>
-![image](https://user-images.githubusercontent.com/88162824/203341336-ed9f1e20-6058-4024-8ab9-f9803c450fb8.png)
+- Example: <br>
+  ```jsx
+   import "./ExpenseItems.css";
+   function ExpenseItems(props) {
+   return (
+     <div className="expense-item">
+       <ExpenseDate date={props.date} />
+       <div className="expense-item__description">
+          <h2>{props.title} </h2>
+          <div className="expense-item__price">${props.amount}</div>
+       </div>
+     </div>
+     );
+   }
+   export default ExpenseItems;
+  ```
 ### CSS Modules
 ## React Props 
 - Props stands for properties.
@@ -66,9 +128,45 @@ Example: <br>
 - Props are passed to components via HTML attributes.
 ### Passing Data Via Props 
 - Specify the prop as an attribute of the custom HTML tag and assign a value to it. <br>
-![image](https://user-images.githubusercontent.com/88162824/203367665-d49e512d-934b-443a-b1bd-d7dd2b4aae48.png)
-- Retrieve these values in the component itself. <br>
-![image](https://user-images.githubusercontent.com/88162824/203367867-361e5eef-4641-4015-9a5d-9018681c6047.png)
+  ```jsx
+   import ExpenseItems from "./components/ExpenseItems";
+   function App() {
+   const expenses = [
+     {
+       id: "e1",
+       title: "Toilet Paper",
+       amount: 94.12,
+       date: new Date(2020, 7, 14),
+     },
+   ];
+   return (
+     <div>
+       <h2>Let's get started!</h2>
+       <ExpenseItems
+        title={props.expenses[0].title}
+        amount={props.expenses[0].amount}
+        date={props.expenses[0].date}
+       />
+     </div>
+   );
+   }
+  ```
+- Retrieve these values in the component itself. <br> 
+  ```jsx
+     import "./ExpenseItems.css";
+     function ExpenseItems(props) {
+      return (
+        <div className="expense-item">
+           <div>{props.date.toISOString()}</div>
+           <div className="expense-item__description">
+             <h2>{props.title} </h2>
+             <div className="expense-item__price">${props.amount}</div>
+           </div>
+        </div>
+      );
+     }
+     export default ExpenseItems;
+  ```
 ## Splitting 
 - React doesn’t force you to follow a specific component structure or hierarchy. 
 - We could build our whole app in a single React component and render all the content together in the same function. 
