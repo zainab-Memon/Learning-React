@@ -45,3 +45,17 @@
   ```
 - The first value, title, is our current state.
 - The second value, setTitle, is the function that is used to update our state.
+##### Read State
+- We can now include our state anywhere in our component.
+  ```jsx
+  import React, { useState } from "react";
+  const ExpenseItems = (props) => {
+     const [title, setTitle] = useState(props.title);
+     return (
+          <div>
+            <h2>{title}</h2>
+          </div>
+        );
+     };
+     export default ExpenseItems;
+  ```
