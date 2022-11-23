@@ -14,3 +14,6 @@
 - The change in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render.  
 - However, the function components didn't have state before React 16.8, state could only be used in class components.
 -  Bu now with new version of react.JS, using hooks, you can apply state to functional components too.
+## Hooks 
+- Hooks allow function components to have access to state and other React features. 
+- Because of this, class components are generally no longer needed.
