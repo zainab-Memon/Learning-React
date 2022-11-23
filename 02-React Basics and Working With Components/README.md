@@ -70,3 +70,7 @@ Example: <br>
 - Retrieve these values in the component itself. <br>
 ![image](https://user-images.githubusercontent.com/88162824/203367867-361e5eef-4641-4015-9a5d-9018681c6047.png)
 ## Splitting 
+- React doesn’t force you to follow a specific component structure or hierarchy. 
+- We could build our whole app in a single React component and render all the content together in the same function. 
+- However, following this approach would not be the best choice as we would not be taking all the advantage of building reusable and modular components. 
+- Instead of having all our DOM elements living in the same React component it is better to break it down into multiple components.
