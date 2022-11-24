@@ -361,3 +361,8 @@
       </form>
     );
   ```  
+## Passing Data From Child Component to Parent Component 
+1. Pass a function as a prop to the Child component.
+  
+2. Call the function in the Child component and pass the data as arguments.
+3. Access the data in the function in the Parent.
