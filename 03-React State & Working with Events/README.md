@@ -372,11 +372,10 @@
           ...enteredExpenseData,
           id: Math.random().toString(),
         };
-        console.log(expenseData);
       };
 
       return (
-        <div className="new-expense">
+        <div>
           <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
         </div>
       );
@@ -400,4 +399,25 @@
       props.onSaveExpenseData(expenseData);
       };
    ```
+- Here we have called our custom event named `onSaveExpenseData` tht will call the function that was passed as a prop to the child component.
+- Which will eventually pass the data of arguments to the parent component.
 3. Access the data in the function in the Parent.
+```jsx
+    import React from "react";
+    import ExpenseForm from "./ExpenseForm";
+    const NewExpense = (props) => {
+      const SaveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = {
+          ...enteredExpenseData,
+          id: Math.random().toString(),
+        };
+        console.log(expenseData); //Accessing the Data
+      };
+      return (
+        <div>
+          <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
+        </div>
+      );
+    };
+    export default NewExpense;
+   ```
