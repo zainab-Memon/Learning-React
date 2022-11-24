@@ -140,12 +140,8 @@
             </div>
             <div>
               <label>Amount</label>
-              <input
-                type="number"
-                min="0.01"
-                step="0.01"
-                onChange={amountChangeHandler}
-              />
+              <input type="number"  min="0.01"  step="0.01"  onChange={amountChangeHandler}
+                          />
             </div>
             <div>
               <label>Date</label>
