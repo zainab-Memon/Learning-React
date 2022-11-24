@@ -363,6 +363,25 @@
   ```  
 ## Passing Data From Child Component to Parent Component 
 1. Pass a function as a prop to the Child component.
-  
+   ```jsx
+    import React from "react";
+    import ExpenseForm from "./ExpenseForm";
+    const NewExpense = (props) => {
+      const SaveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = {
+          ...enteredExpenseData,
+          id: Math.random().toString(),
+        };
+        console.log(expenseData);
+      };
+
+      return (
+        <div className="new-expense">
+          <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
+        </div>
+      );
+    };
+    export default NewExpense;
+   ```
 2. Call the function in the Child component and pass the data as arguments.
 3. Access the data in the function in the Parent.
