@@ -303,3 +303,7 @@
     };
     export default ExpenseForm;
   ```  
+### Two Way Binding 
+- Since we are using preventDefault function that won't reload the page when we submit the form, the inputs won't clear once those values are submitted. 
+- **So How Can We Clear Those Inputs?**
+  
