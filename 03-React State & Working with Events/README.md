@@ -421,3 +421,7 @@
     };
     export default NewExpense;
    ```
+## Lifting State Up
+- We lift up state to a common ancestor of components that need it, so that they can all share in the state. 
+- This allows us to more easily share state among all of these components that need rely upon it. <br>
+![image](https://user-images.githubusercontent.com/88162824/203833155-81abab48-9df2-46c1-9d31-7c01359d0222.png)
