@@ -179,10 +179,12 @@
         enteredDate: "",
       });
       
-      // For Title (here the arg name prevState holds the values of all input field before updating them)
+      // For Title 
+      // here the arg name prevState holds the values of all input field before updating them
       const titleChangeHandler = (event) => {
         setUserInput((prevState) => {
-          return { ...prevState, enteredTitle: event.target.value }; // using spread operator to ensure that other pieces of data don't get lost and then overriding the Title with the new input value. 
+          return { ...prevState, enteredTitle: event.target.value }; 
+          // using spread operator to ensure that other pieces of data don't get lost and then overriding the Title with the new input value. 
         });
       };
       
