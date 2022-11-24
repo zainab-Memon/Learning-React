@@ -306,4 +306,7 @@
 ### Two Way Binding 
 - Since we are using preventDefault function that won't reload the page when we submit the form, the inputs won't clear once those values are submitted. 
 - **So How Can We Clear Those Inputs?**
+- Since we are using states, we can now implement **two way binding**. 
+- Which means for inputs we don't just listen to inputs but we can also pass a new value back into the input, so that we can reset or change the input. 
+- We can do that by setting `value` prop in input fields and setting the useState function to blank content so that whenever a form is submitted the input fields are cleard. 
   
