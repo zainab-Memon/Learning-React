@@ -112,7 +112,8 @@
 - In React, form data is usually handled by the components.
 - When the data is handled by the components, all the data is stored in the component state.
 - You can control changes by adding event handlers in the onChange attribute.
-- We can use the useState Hook to keep track of each inputs value and provide a "single source of truth" for the entire application.
+- We can use the useState Hook to keep track of each inputs value.
+- We can use multiple useState as shown below.
    ```jsx
     import React, { useState } from "react";
     const ExpenseForm = () => {
