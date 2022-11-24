@@ -107,7 +107,7 @@
       );
     };
   ```    
-### Handling Forms
+### Handling Form (With Multiple States)
 - Handling forms is about how you handle the data when it changes value or gets submitted.
 - In React, form data is usually handled by the components.
 - When the data is handled by the components, all the data is stored in the component state.
@@ -166,3 +166,4 @@
     };
     export default ExpenseForm;
   ```  
+  ### Handling Form (With One State)
