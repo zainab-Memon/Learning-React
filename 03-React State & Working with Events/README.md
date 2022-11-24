@@ -383,5 +383,21 @@
     };
     export default NewExpense;
    ```
+- Here the NewExpense Component is the parent component and ExpenseForm component is the child component.
+- We have passed the `SaveExpenseDataHandler()` function as a prop to the ExpenseForm Component. 
 2. Call the function in the Child component and pass the data as arguments.
+   ```jsx
+    import React, { useState } from "react";
+    import "./ExpenseForm.css";
+    const ExpenseForm = (props) => {
+      const submitHandler = (event) => {
+        event.preventDefault(); //The page won't reload now.
+        const expenseData = {
+          title: enteredTitle,
+          amount: enteredAmount,
+          date: new Date(enteredDate),
+        };
+      props.onSaveExpenseData(expenseData);
+      };
+   ```
 3. Access the data in the function in the Parent.
