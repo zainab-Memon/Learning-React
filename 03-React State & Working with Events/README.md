@@ -167,3 +167,67 @@
     export default ExpenseForm;
   ```  
   ### Handling Form (With One State)
+- In above code, we have used multiple states to handle multiple form inputs, which is the recommended approach. 
+- However, we can still use single state to handle multiple inputs. 
+- We will initialize our state with an empty object.
+   ```jsx
+    import React, { useState } from "react";
+    const ExpenseForm = () => {
+      const [userInput, setUserInput] = useState({
+        enteredTitle: "", 
+        enteredAmount: "",
+        enteredDate: "",
+      });
+      
+      // For Title (here the arg name prevState holds the values of all input field before updating them)
+      const titleChangeHandler = (event) => {
+        setUserInput((prevState) => {
+          return { ...prevState, enteredTitle: event.target.value }; // using spread operator to ensure that other pieces of data don't get lost and then overriding the Title with the new input value. 
+        });
+      };
+      
+      // For Amount
+      const amountChangeHandler = (event) => {
+        setUserInput((prevState) => {
+          return { ...prevState, enteredAmount: event.target.value };
+        });
+      };
+      // For Date
+      const dateChangeHandler = (event) => {
+        setUserInput((prevState) => {
+          return { ...prevState, enteredDate: event.target.value };
+        });
+      };
+      return (
+        <form>
+          <div>
+            <div>
+              <label>Title</label>
+              <input type="text" onChange={titleChangeHandler} />
+            </div>
+            <div>
+              <label>Amount</label>
+              <input
+                type="number"
+                min="0.01"
+                step="0.01"
+                onChange={amountChangeHandler}
+              />
+            </div>
+            <div>
+              <label>Date</label>
+              <input
+                type="date"
+                min="2019-01-01"
+                max="2022-12-31"
+                onChange={dateChangeHandler}
+              />
+            </div>
+          </div>
+          <div>
+            <button type="submit"> Add Expense</button>
+          </div>
+        </form>
+      );
+    };
+    export default ExpenseForm;
