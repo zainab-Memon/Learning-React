@@ -166,7 +166,7 @@
     };
     export default ExpenseForm;
   ```  
-  ### Handling Form (With One State)
+### Handling Form (With One State)
 - In above code, we have used multiple states to handle multiple form inputs, which is the recommended approach. 
 - However, we can still use single state to handle multiple inputs. 
 - We will initialize our state with an empty object.
@@ -233,3 +233,73 @@
       );
     };
     export default ExpenseForm;
+  ```  
+### Handling Form Submission
+- You can control the submit action by adding an event handler in the onSubmit attribute for the <form>:
+   ```jsx
+    import React, { useState } from "react";
+    const ExpenseForm = () => {
+      // using multiple states---------------------
+      const [enteredTitle, setEnteredTitle] = useState(""); //destructuring
+      const [enteredAmount, setEnteredAmount] = useState("");
+      const [enteredDate, setEnteredDate] = useState("");
+
+      // For Title
+      const titleChangeHandler = (event) => {
+        // using multiple states--------------------------
+        setEnteredTitle(event.target.value); //storing the user input in state (using multiple states)
+        };
+      // For Amount
+      const amountChangeHandler = (event) => {
+        // using multiple states--------------------------
+        setEnteredAmount(event.target.value);
+       };
+      // For Date
+      const dateChangeHandler = (event) => {
+        // using multiple states--------------------------
+        setEnteredDate(event.target.value);
+      };
+
+      const submitHandler = (event) => {
+        event.preventDefault(); //The page won't reload now.
+        const expenseData = {
+          title: enteredTitle,
+          amount: enteredAmount,
+          date: new Date(enteredDate),
+        };
+        console.log(expenseData);
+      };
+      return (
+        <form onSubmit={submitHandler}>
+          <div>
+            <div>
+              <label>Title</label>
+              <input type="text" onChange={titleChangeHandler} />
+            </div>
+            <div>
+              <label>Amount</label>
+              <input
+                type="number"
+                min="0.01"
+                step="0.01"
+                onChange={amountChangeHandler}
+              />
+            </div>
+            <div>
+              <label>Date</label>
+              <input
+                type="date"
+                min="2019-01-01"
+                max="2022-12-31"
+                onChange={dateChangeHandler}
+              />
+            </div>
+          </div>
+          <div>
+            <button type="submit"> Add Expense</button>
+          </div>
+        </form>
+      );
+    };
+    export default ExpenseForm;
+  ```  
