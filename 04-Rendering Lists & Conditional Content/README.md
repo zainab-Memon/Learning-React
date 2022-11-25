@@ -47,7 +47,7 @@
 - We can use && and ternary operator for conditional rendering in react
 - We can also use if statement but cannot combine it with else in return statement. 
 - Therfore we have to use either && or ternary operator for conditional rendering
-### conditional rendering using && operator 
+### Conditional rendering using && operator 
 - Here if the length of data in filterExpenses is equal to 0 then this `<p>No Content Found</p>` will be rendered otherwise the ExpenseItems component will be rendered.
   ```jsx
    {filteredExpenses.length === 0 && <p>No Content Found</p>}
@@ -60,8 +60,8 @@
             date={expense.date}
             />
          ))}
- ```
-### conditional rendering using ternary operator 
+  ```
+### Conditional rendering using ternary operator 
   ```jsx
    {filteredExpenses.length === 0 ? ( <p>No Expenses Found</p>) : (
       filteredExpenses.map((expense) => (
