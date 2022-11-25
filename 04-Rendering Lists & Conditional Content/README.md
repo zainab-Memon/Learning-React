@@ -43,3 +43,4 @@
 - This way, if an item is updated or removed, only that item will be re-rendered instead of the entire list.
 - Keys need to be unique to each sibling.
 - You can use index of an array as a key or add a key item in array.
+## React Conditional Rendering
