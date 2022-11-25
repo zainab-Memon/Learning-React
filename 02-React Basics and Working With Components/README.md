@@ -167,6 +167,10 @@
      }
      export default ExpenseItems;
   ```
+ #### Summary
+- So basically, we passed in props as an argument in our function. props gets passed as a parameter to our functional component. 
+- We then tried to access it by writing the following: the props.date, props.title, and props.amount.
+- Now that we've done that, we can go back to our App.js to render our product and pass some data to these three props. Props are passed in like HTML attributes.
 ## Splitting 
 - React doesn’t force you to follow a specific component structure or hierarchy. 
 - We could build our whole app in a single React component and render all the content together in the same function. 
