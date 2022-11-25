@@ -39,4 +39,7 @@
   ```
 ## Keys
 - When you run this code in your create-react-app, it will work but you will receive a warning that there is no "key" provided for the list items.
-- 
+- Keys allow React to keep track of elements. 
+- This way, if an item is updated or removed, only that item will be re-rendered instead of the entire list.
+- Keys need to be unique to each sibling.
+- You can use index of an array as a key or add a key item in array.
