@@ -37,3 +37,6 @@
     }  
     export default NameList;  
   ```
+## Keys
+- When you run this code in your create-react-app, it will work but you will receive a warning that there is no "key" provided for the list items.
+- 
