@@ -44,3 +44,20 @@
 - Keys need to be unique to each sibling.
 - You can use index of an array as a key or add a key item in array.
 ## React Conditional Rendering
+- We can use && and ternary operator for conditional rendering in react
+- We can also use if statement but cannot combine it with else in return statement. 
+- Therfore we have to use either && or ternary operator for conditional rendering
+### conditional rendering using && operator 
+- Here if the length of data in filterExpenses is equal to 0 then this `<p>No Content Found</p>` will be rendered otherwise the ExpenseItems component will be rendered.
+  ```jsx
+   {filteredExpenses.length === 0 && <p>No Content Found</p>}
+   {filteredExpenses.length > 0 &&
+      filteredExpenses.map((expense) => (
+         <ExpenseItems
+            key={expense.id}
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+            />
+          ))}
+ ```
