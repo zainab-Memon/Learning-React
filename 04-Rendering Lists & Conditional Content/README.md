@@ -59,5 +59,18 @@
             amount={expense.amount}
             date={expense.date}
             />
-          ))}
+         ))}
  ```
+### conditional rendering using ternary operator 
+  ```jsx
+   {filteredExpenses.length === 0 ? ( <p>No Expenses Found</p>) : (
+      filteredExpenses.map((expense) => (
+        <ExpenseItems
+           key={expense.id}
+           title={expense.title}
+           amount={expense.amount}
+           date={expense.date}
+         />
+          ))
+      )}
+  ```    
