@@ -4,7 +4,7 @@
 - In React, Lists can be created in a similar way as we create lists in JavaScript.
 - In React, you will render lists with some type of loop.
 - The JavaScript map() array method is generally the preferred method.
-### App Component 
+### App Component (Parent Component)
   ```jsx
     import React from 'react';   
     import ReactDOM from 'react-dom';   
@@ -20,21 +20,20 @@
     };
     export default App;
   ```
-function NameList(props) {  
-  const myLists = props.myLists;  
-  const listItems = myLists.map((myList) =>  
-    <li>{myList}</li>  
-  );  
-  return (  
-    <div>  
-        <h2>Rendering Lists inside component</h2>  
-              <ul>{listItems}</ul>  
-    </div>  
-  );  
-}  
-const myLists = ['Peter', 'Sachin', 'Kevin', 'Dhoni', 'Alisa'];   
-ReactDOM.render(  
-  <NameList myLists={myLists} />,  
-  document.getElementById('app')  
-);  
-export default App;  
+### NameList Component (Child Component)
+  ```jsx
+    import React from 'react';   
+    function NameList(props) {  
+      const myLists = props.myLists;  
+      const listItems = myLists.map((myList) =>  
+        <li>{myList}</li>  
+      );  
+      return (  
+        <div>  
+            <h2>Rendering Lists inside component</h2>  
+                  <ul>{listItems}</ul>  
+        </div>  
+      );  
+    }  
+    export default NameList;  
+  ```
