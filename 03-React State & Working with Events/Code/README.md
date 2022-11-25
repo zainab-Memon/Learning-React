@@ -1,3 +1,3 @@
 - All the concepts related to basics of React and working with components are applied in this project code, however the advanced concepts of React are applied in the code files of each chapter.
 - At the end of this course, you can find a complete code of this project.
-- **Please find the src folder in your project that you have to create with create-react-app command and copy & paste these code files in relevant files**
+- **Please find the src folder in your project that you have to create with `create-react-app` command and copy & paste these code files in relevant files**
