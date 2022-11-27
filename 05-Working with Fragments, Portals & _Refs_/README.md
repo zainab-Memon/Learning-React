@@ -122,5 +122,10 @@
     };
     export default ErrorModal;
   ```
-
+### Uses
+- The common use-cases of React portal include:
+  - Modals
+  - Tooltips
+  - Floating menus
+  - Widgets
 
