@@ -67,3 +67,59 @@
 
     export default App;
   ```  
+## React Portals
+- React Portals are an advanced concept that allows developers to render their elements outside the React hierarchy tree without comprising the parent-child relationship between components.
+- Usually, typical React components are located within the DOM. 
+- This means that it might be tricky for you to render modals or pop-up window.
+- This concept allows developers to render an element outside its parent’s DOM node. 
+- Despite this, React still preserves the component’s position in the component hierarchy.
+- In other words, the component can still maintain the properties and behaviors it inherits in the React tree.
+- Syntax: 
+- Example:
+  ```jsx
+    import React from "react";
+    import ReactDOM from "react-dom";
+    import Card from "./Card";
+    import Button from "./Button";
+    import classes from "./ErrorModal.module.css";
+
+    const Backdrop = (props) => {
+      return <div className={classes.backdrop} onClick={props.onConfirm} />;
+    };
+    const ModalOverlay = (props) => {
+      return (
+        <Card className={classes.modal}>
+          <header className={classes.header}>
+            <h2>{props.title}</h2>
+          </header>
+          <div className={classes.content}>
+            <p>{props.message}</p>
+          </div>
+          <footer className={classes.actions} onClick={props.onConfirm}>
+            <Button>Ok!</Button>
+          </footer>
+        </Card>
+      );
+    };
+    const ErrorModal = (props) => {
+      return (
+        <React.Fragment>
+          {ReactDOM.createPortal(
+            <Backdrop onConfirm={props.onConfirm} />,
+            document.getElementById("backdrop-root") // I have created a div with this id in index.html before the root div
+          )}
+          {ReactDOM.createPortal(
+            <ModalOverlay
+              title={props.title}
+              message={props.message}
+              onConfirm={props.onConfirm}
+            />,
+            document.getElementById("overlay-root")
+          )}
+        </React.Fragment>
+      );
+    };
+    export default ErrorModal;
+  ```
+
+
