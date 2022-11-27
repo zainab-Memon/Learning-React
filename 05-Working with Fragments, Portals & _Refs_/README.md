@@ -16,7 +16,7 @@
 - These fragments do not produce any extra elements in the DOM, which means that a fragment’s child components will render without any wrapping DOM node.
 - React fragments enable us to group multiple sibling components without introducing any unnecessary markup in the rendered HTML.
 ### Creating and rendering fragments in React
-#### Syntax 1: 
+#### Syntax 1: Without importing fragments
   ```jsx
     import "./App.css";
     import React from "react";
@@ -28,6 +28,23 @@
           <h1>Learning React Fragments</h2>
           <p>Did you get it?</p>
         </React.Fragment>
+      );
+    }
+
+    export default App;
+  ```
+#### Syntax 1: With importing fragments
+  ```jsx
+    import "./App.css";
+    import React, {Fragment} from "react";
+   
+    function App() {
+      
+      return (
+        <Fragment>
+          <h1>Learning React Fragments</h2>
+          <p>Did you get it?</p>
+        </Fragment>
       );
     }
 
