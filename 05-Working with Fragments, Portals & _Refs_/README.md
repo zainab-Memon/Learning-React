@@ -33,7 +33,7 @@
 
     export default App;
   ```
-#### Syntax 1: With importing fragments
+#### Syntax 2: With importing fragments
   ```jsx
     import "./App.css";
     import React, {Fragment} from "react";
@@ -50,3 +50,20 @@
 
     export default App;
   ```
+#### Syntax 3: Shorthand
+  ```jsx
+    import "./App.css";
+    import React, {Fragment} from "react";
+   
+    function App() {
+      
+      return (
+        <>
+          <h1>Learning React Fragments</h2>
+          <p>Did you get it?</p>
+        </>
+      );
+    }
+
+    export default App;
+  ```  
