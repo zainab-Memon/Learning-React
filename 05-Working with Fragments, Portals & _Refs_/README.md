@@ -17,3 +17,30 @@
 - React fragments enable us to group multiple sibling components without introducing any unnecessary markup in the rendered HTML.
 ### Creating and rendering fragments in React
 #### Syntax 1: 
+  ```jsx
+    import "./App.css";
+    import React, { useState } from "react";
+    import AddUser from "./components/Users/AddUser";
+    import UsersList from "./components/Users/UsersList";
+
+    function App() {
+      const [usersList, setUsersList] = useState([]);
+      const addUserHandler = (uName, uAge) => {
+        setUsersList((prevUsersList) => {
+          return [
+            ...prevUsersList,
+            { name: uName, age: uAge, id: Math.random().toString() },
+          ];
+        });
+      };
+
+      return (
+        <React.Fragment>
+          <AddUser onAddUser={addUserHandler} />
+          <UsersList users={usersList} />
+        </React.Fragment>
+      );
+    }
+
+    export default App;
+  ```
