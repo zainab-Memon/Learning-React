@@ -19,25 +19,14 @@
 #### Syntax 1: 
   ```jsx
     import "./App.css";
-    import React, { useState } from "react";
-    import AddUser from "./components/Users/AddUser";
-    import UsersList from "./components/Users/UsersList";
-
+    import React from "react";
+   
     function App() {
-      const [usersList, setUsersList] = useState([]);
-      const addUserHandler = (uName, uAge) => {
-        setUsersList((prevUsersList) => {
-          return [
-            ...prevUsersList,
-            { name: uName, age: uAge, id: Math.random().toString() },
-          ];
-        });
-      };
-
+      
       return (
         <React.Fragment>
-          <AddUser onAddUser={addUserHandler} />
-          <UsersList users={usersList} />
+          <h1>Learning React Fragments</h2>
+          <p>Did you get it?</p>
         </React.Fragment>
       );
     }
