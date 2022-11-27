@@ -74,7 +74,8 @@
 - This concept allows developers to render an element outside its parent’s DOM node. 
 - Despite this, React still preserves the component’s position in the component hierarchy.
 - In other words, the component can still maintain the properties and behaviors it inherits in the React tree.
-- Syntax: 
+- Syntax: `ReactDom.createPortal(child,container)`
+- Here the first arguement child is a component that we want to render or an HTML element and the second arguement is a DOM element to which child will be rendered.
 - Example:
   ```jsx
     import React from "react";
