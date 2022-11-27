@@ -33,7 +33,7 @@
 
     export default App;
   ```
-#### Syntax 2: With importing fragments
+#### Syntax 2: With a named import
   ```jsx
     import "./App.css";
     import React, {Fragment} from "react";
