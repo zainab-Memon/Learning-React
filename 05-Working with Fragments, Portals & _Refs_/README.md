@@ -152,9 +152,14 @@
    />
 ```
 - The connection will be established now. 
-- useRef returns an object like this one: 
+- useRef returns an object like this one and that object has a current property that holds the actual value of that ref it is connected with.
+- A real DOM node is being stored in the current property, which you could now manipulate or read. 
 ```
 { 
   current: 0 // The value you passed to useRef
 }
+```
+- **Reading The Data**
+```jsx
+  const enteredName = nameInputRef.current.value;
 ```
