@@ -141,9 +141,9 @@
 ```jsx
   const nameInputRef = useRef();
 ```
-- useRef takes a default value and returns a value which allows us to work with that ref later.
+  - useRef takes a default value and returns a value which allows us to work with that ref later.
 - **Connect the ref with an element with ref prop**
-- You can connect ref with any element.
+  - You can connect ref with any element.
 ```jsx
   <input
        id="username"
@@ -151,9 +151,9 @@
        ref={nameInputRef}
    />
 ```
-- The connection will be established now. 
-- useRef returns an object like this one and that object has a current property that holds the actual value of that ref it is connected with.
-- A real DOM node is being stored in the current property, which you could now manipulate or read. 
+  - The connection will be established now. 
+  - useRef returns an object like this one and that object has a current property that holds the actual value of that ref it is connected with.
+  - A real DOM node is being stored in the current property, which you could now manipulate or read. 
 ```
 { 
   current: 0 // The value you passed to useRef
@@ -163,7 +163,7 @@
 ```jsx
   const enteredName = nameInputRef.current.value;
 ```
-- Now you can use this value in your code for various purpose. 
+  - Now you can use this value in your code for various purpose. 
 - **Example:**
 ```jsx
   import React, {useRef } from "react";
