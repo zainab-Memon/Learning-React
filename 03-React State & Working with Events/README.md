@@ -78,6 +78,7 @@
       };
     export default ExpenseItems;
    ```
+- **Note: Rest of the types of hooks are explained [here](https://github.com/zainab-Memon/Learning-React/tree/main/06-Advanced%20-%20Handling%20Side%20Effects%2C%20Using%20Reducers%20%26%20Using%20the%20Context%20API).
 # Day 6: 24/11/2022
 ## Form in React 
 - Just like in HTML, React uses forms to allow users to interact with the web page.
