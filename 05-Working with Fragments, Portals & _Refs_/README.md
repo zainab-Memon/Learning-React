@@ -133,11 +133,20 @@
 - You can use refs instead of state in form, but that's upto you. 
 - However if you only want to read some values and never plan changing anything, then you should never use states but refs.
 ### Adding Ref to your component
-- import useRef hook from React: 
+- **import useRef hook from React:** 
 ```jsx 
   import React, {useRef } from "react";
 ```  
-- Inside the component, call the useRef Hook:
+- **Inside the component, call the useRef Hook:**
 ```jsx
   const nameInputRef = useRef();
+```
+- useRef takes a default value and returns a value which allows us to work with that ref later.
+- **Connect the ref with an element with ref prop**
+```jsx
+  <input
+       id="username"
+       type="text"
+       ref={nameInputRef}
+   />
 ```
