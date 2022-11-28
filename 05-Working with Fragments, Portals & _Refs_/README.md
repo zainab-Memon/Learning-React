@@ -128,6 +128,7 @@
   - Tooltips
   - Floating menus
   - Widgets
+# Day 8: 28/11/22
 ## Refs (References)
 - Refs allow us to get access to other DOM elements and work with them. 
 - You can use refs instead of state in form, but that's upto you. 
