@@ -143,10 +143,18 @@
 ```
 - useRef takes a default value and returns a value which allows us to work with that ref later.
 - **Connect the ref with an element with ref prop**
+- You can connect ref with any element.
 ```jsx
   <input
        id="username"
        type="text"
        ref={nameInputRef}
    />
+```
+- The connection will be established now. 
+- useRef returns an object like this one: 
+```
+{ 
+  current: 0 // The value you passed to useRef
+}
 ```
