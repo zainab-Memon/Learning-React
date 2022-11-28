@@ -137,3 +137,7 @@
 ```jsx 
   import React, {useRef } from "react";
 ```  
+- Inside the component, call the useRef Hook:
+```jsx
+  const nameInputRef = useRef();
+```
