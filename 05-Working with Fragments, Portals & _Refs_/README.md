@@ -128,4 +128,5 @@
   - Tooltips
   - Floating menus
   - Widgets
-
+## Refs (References)
+- Refs allow us to get access to other DOM elements and work with them. 
