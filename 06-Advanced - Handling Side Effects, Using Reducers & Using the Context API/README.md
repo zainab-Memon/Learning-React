@@ -41,3 +41,11 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - If you do not provide the dependencies array at all and only provide a function to useEffect, it will run after every render, and we will have an infinite loop.
 - If you are updating state within your useEffect, make sure to provide an empty dependencies array. If you do provide an empty array,this will cause the effect function to only run once after the component has rendered the first time.
 - However, if you want the useEffect to run everytime a certain dependency change than you should add props or state in the dependencies array.
+- Example: 
+  ```jsx
+    useEffect(() => {
+      setFormIsValid(
+       enteredEmail.includes("@") && enteredPassword.trim().length > 6
+      );
+    }, [enteredEmail, enteredPassword]);
+  ```
