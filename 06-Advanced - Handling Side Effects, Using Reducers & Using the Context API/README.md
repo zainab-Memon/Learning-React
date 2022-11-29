@@ -17,7 +17,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   - Store data in browser syorage 
   - Send Http requests to backend servers
   - Set and manage timers
-  ## useEffect
+## useEffect
 - The useEffect Hook allows you to perform side effects in your components.
 - If we perform a side effect directly in our component body, it gets in the way of our React component's rendering.
 - Side effects should be separated from the rendering process. If we need to perform a side effect, it should strictly be done after our component renders.
@@ -49,3 +49,11 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
       );
     }, [enteredEmail, enteredPassword]);
   ```
+### Effect Cleanup
+- Some effects require cleanup to reduce memory leaks.
+- Timeouts, subscriptions, event listeners, and other effects that are no longer needed should be disposed.
+- We do this by including a return function at the end of the useEffect Hook.
+- Cleanup works the following way:
+  1. After initial rendering, useEffect() invokes the callback having the side-effect. cleanup function is not invoked.
+  2. On later renderings, before invoking the next side-effect callback, useEffect() invokes the cleanup function from the previous side-effect execution (to clean up everything after the previous side-effect), then runs the current side-effect.
+  3. Finally, after unmounting the component, useEffect() invokes the cleanup function from the latest side-effect.
