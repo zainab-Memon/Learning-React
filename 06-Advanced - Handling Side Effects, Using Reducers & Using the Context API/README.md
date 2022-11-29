@@ -24,8 +24,8 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - This is what useEffect gives us.
 - useEffect is a tool that lets us interact with the outside world but not affect the rendering or performance of the component that it's in.
 - useEffect() hook accepts 2 arguments: `useEffect(callback[, dependencies]);`
-  - callback is the function containing the side-effect logic. callback is executed right after changes were being pushed to DOM.
-  - dependencies is an optional array of dependencies. useEffect() executes callback only if the dependencies have changed between renderings.
+  - callback is the function containing the side-effect logic.This will be called after the component renders. In this function, we can perform our side effects or multiple side effects if we want.
+  - dependencies is an optional array of dependencies. This array should include all of the values that our side effect relies upon. useEffect() executes callback only if the dependencies have changed between renderings.
 - Put your side-effect logic into the callback function, then use the dependencies argument to control when you want the side-effect to run. That's the sole purpose of useEffect()
 ### Way to Perform side effect
 - The correct way to perform the side effect in our User component is as follows:
@@ -37,5 +37,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
      ```jsx
        useEffect(() =>{}, []);
      ```
-  - We pass it two arguments: a function and an array of dependencies
-
+### Dependencies
+- If you do not provide the dependencies array at all and only provide a function to useEffect, it will run after every render, and we will have an infinite loop.
+- If you are updating state within your useEffect, make sure to provide an empty dependencies array. If you do provide an empty array,this will cause the effect function to only run once after the component has rendered the first time.
+- However, if you want the useEffect to run everytime a certain dependency change than you should add props or state in the dependencies array.
