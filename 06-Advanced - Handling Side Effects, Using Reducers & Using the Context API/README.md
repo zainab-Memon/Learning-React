@@ -53,6 +53,14 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - Some effects require cleanup to reduce memory leaks.
 - Timeouts, subscriptions, event listeners, and other effects that are no longer needed should be disposed.
 - We do this by including a return function at the end of the useEffect Hook.
+  ```jsx
+    useEffect(() => {
+      // Side-effect...
+      return function cleanup() {
+      // Side-effect cleanup...
+      };
+    }, dependencies);
+  ```
 - Cleanup works the following way:
   1. After initial rendering, useEffect() invokes the callback having the side-effect. cleanup function is not invoked.
   2. On later renderings, before invoking the next side-effect callback, useEffect() invokes the cleanup function from the previous side-effect execution (to clean up everything after the previous side-effect), then runs the current side-effect.
