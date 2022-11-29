@@ -30,6 +30,12 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 ### Way to Perform side effect
 - The correct way to perform the side effect in our User component is as follows:
   - We import useEffect from "react"
+     ```jsx
+      import React, { useState, useEffect } from "react";
+     ```
   - We call it above the returned JSX in our component
+     ```jsx
+       useEffect(() =>{}, []);
+     ```
   - We pass it two arguments: a function and an array of dependencies
 
