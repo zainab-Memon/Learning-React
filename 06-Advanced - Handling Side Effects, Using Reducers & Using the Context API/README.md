@@ -65,3 +65,8 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   1. After initial rendering, useEffect() invokes the callback having the side-effect. cleanup function is not invoked.
   2. On later renderings, before invoking the next side-effect callback, useEffect() invokes the cleanup function from the previous side-effect execution (to clean up everything after the previous side-effect), then runs the current side-effect.
   3. Finally, after unmounting the component, useEffect() invokes the cleanup function from the latest side-effect.
+# Day 9: 29/11/u2022
+## useReducer
+- useReducer is one of the additional Hooks.
+- An alternative to the useState Hook, useReducer helps you manage complex state logic in React applications.
+- It helps in more powerful state management.
