@@ -1,14 +1,14 @@
 # Day 8: 28/11/2022
-# Component Lifecycle
+## Component Lifecycle
 - This lifecycle consists of three main parts: 
-## Mounting
+### Mounting
 - Mounting means putting elements into the DOM.
-## Updating
+### Updating
 - The next phase in the lifecycle is when a component is updated.
 - A component is updated whenever there is a change in the component's state or props.
-## unmounting
+### unmounting
 - The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
-## Explanation
+### Explanation
 To understand better a component's lifecycle, we can look at the lifecycle of a flower. When the flower's seed is planted, it is mounted. Then, as it grows, it is updating and, unfortunately, it will die (or unmount) someday. The component's lifecycle is exactly the same: when the user lands on the page, the component is mounted, then as the states update, the component is also updated, and, finally, the component is unmounted when the user leaves the page.
 ## Side Effects
 - Side effects are basically anything that affects something outside of the scope of the current function that’s being executed.
