@@ -16,4 +16,5 @@
 - The correct way to perform the side effect in our User component is as follows:
   - We import useEffect from "react"
   - We call it above the returned JSX in our component
-  - We pass it two arguments: a function and an array
+  - We pass it two arguments: a function and an array of dependencies
+
