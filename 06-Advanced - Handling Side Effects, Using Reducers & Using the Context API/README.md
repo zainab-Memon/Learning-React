@@ -76,7 +76,11 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   ```
 ### Understanding useReducer()
 ![image](https://user-images.githubusercontent.com/88162824/204764945-ebbf8919-e769-457f-9763-92ca2a35fcfa.png)
-
+### Adding a useReducer() to a component
+- Call useReducer at the top level of your component to manage state with a reducer.
+  ```jsx
+    import React, { useState, useEffect, useReducer } from "react";
+  ```
 ### Comparision of useState and useReducer 
   ```jsx
     const [state, setState] = useState(initialValue);
