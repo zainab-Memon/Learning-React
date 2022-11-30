@@ -141,6 +141,8 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
     };
     export default Counter;
   ```
+- An action object is an object that describes how to update the state.
+- Typically, the action object would have a property type — a string describing what kind of state update the reducer must do.  
 ### Comparision of useState and useReducer 
   ```jsx
     const [state, setState] = useState(initialValue);
