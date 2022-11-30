@@ -74,6 +74,9 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   ```jsx  
    const [state, dispatch] = useReducer(reducer, initialValue);
   ```
+### Understanding useReducer()
+![image](https://user-images.githubusercontent.com/88162824/204764945-ebbf8919-e769-457f-9763-92ca2a35fcfa.png)
+
 ### Comparision of useState and useReducer 
   ```jsx
     const [state, setState] = useState(initialValue);
