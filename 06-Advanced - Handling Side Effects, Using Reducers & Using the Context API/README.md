@@ -146,7 +146,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - Typically, the action object would have a property type — a string describing what kind of state update the reducer must do.  
 ### useState vs useReducer 
 ![image](https://user-images.githubusercontent.com/88162824/204901199-14d6ae49-4712-4c1f-98f6-d2c0d5fc10cf.png)
--   ```jsx
+  ```jsx
     const [state, setState] = useState(initialValue);
     const [state, dispatch] = useReducer(reducer, initialValue);
   ```
