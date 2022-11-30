@@ -106,6 +106,36 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
    }
   ```
 - Now React will pass the current state and the action to your reducer function. Your reducer will calculate and return the next state. React will store that next state, render your component with it, and update the UI.  
+#### Example
+  ```jsx
+    import { useReducer } from "react";
+    const myReducer = (state, action) => {
+      if (action.type === "incremented_age") {
+        return {
+          age: state.age + 1,
+        };
+      }
+      throw Error("Unknown action.");
+    };
+
+    const Counter = () => {
+      const [state, dispatch] = useReducer(myReducer, { age: 42 });
+
+      return (
+        <>
+          <button
+            onClick={() => {
+              dispatch({ type: "incremented_age" });
+            }}
+          >
+            Increment age
+          </button>
+          <p>Hello! You are {state.age}.</p>
+        </>
+      );
+    };
+    export default Counter;
+  ```
 ### Comparision of useState and useReducer 
   ```jsx
     const [state, setState] = useState(initialValue);
