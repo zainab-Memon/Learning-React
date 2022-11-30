@@ -17,6 +17,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   - Store data in browser syorage 
   - Send Http requests to backend servers
   - Set and manage timers
+# Day 9: 29/11/2022
 ## useEffect
 - The useEffect Hook allows you to perform side effects in your components.
 - If we perform a side effect directly in our component body, it gets in the way of our React component's rendering.
@@ -65,7 +66,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   1. After initial rendering, useEffect() invokes the callback having the side-effect. cleanup function is not invoked.
   2. On later renderings, before invoking the next side-effect callback, useEffect() invokes the cleanup function from the previous side-effect execution (to clean up everything after the previous side-effect), then runs the current side-effect.
   3. Finally, after unmounting the component, useEffect() invokes the cleanup function from the latest side-effect.
-# Day 9: 29/11/u2022
+# Day 10: 30/11/2022
 ## useReducer
 - useReducer is one of the additional Hooks.
 - An alternative to the useState Hook, useReducer helps you manage complex state logic in React applications.
@@ -143,11 +144,12 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   ```
 - An action object is an object that describes how to update the state.
 - Typically, the action object would have a property type — a string describing what kind of state update the reducer must do.  
-### Comparision of useState and useReducer 
-  ```jsx
+### useState vs useReducer 
+![image](https://user-images.githubusercontent.com/88162824/204901199-14d6ae49-4712-4c1f-98f6-d2c0d5fc10cf.png)
+-   ```jsx
     const [state, setState] = useState(initialValue);
     const [state, dispatch] = useReducer(reducer, initialValue);
   ```
 - As you can see, in both cases the hook returns an array with two elements. 
-- The first is the state, and the second is a function that lets you modify the state: setState for useState, and dispatch for useReducer  
+- The first is the state, and the second is a function that lets you modify the state: setState for useState, and dispatch for useReducer.
 
