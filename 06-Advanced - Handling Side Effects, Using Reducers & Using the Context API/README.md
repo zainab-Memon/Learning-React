@@ -71,8 +71,10 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - An alternative to the useState Hook, useReducer helps you manage complex state logic in React applications.
 - It helps in more powerful state management.
 ### Comparision of useState and useReducer 
-    ```jsx
+  ```jsx
     const [state, setState] = useState(initialValue);
-
     const [state, dispatch] = useReducer(reducer, initialValue);
-    ```
+  ```
+- As you can see, in both cases the hook returns an array with two elements. 
+- The first is the state, and the second is a function that lets you modify the state: setState for useState, and dispatch for useReducer  
+
