@@ -77,10 +77,35 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 ### Understanding useReducer()
 ![image](https://user-images.githubusercontent.com/88162824/204764945-ebbf8919-e769-457f-9763-92ca2a35fcfa.png)
 ### Adding a useReducer() to a component
-- Call useReducer at the top level of your component to manage state with a reducer.
+- Import useReducer from react
   ```jsx
     import React, { useState, useEffect, useReducer } from "react";
   ```
+- Call useReducer at the top level of your component to manage state with a reducer.
+  ```jsx
+    import { useReducer } from 'react';
+
+    function MyComponent() {
+      const [state, dispatch] = useReducer(reducer, initialState);
+      // ...
+  ```
+- Write a reducer function before the component function that accepts state and some action and returns a new state that is the result of performing that action on previous state.
+  ```jsx
+    import { useReducer } from 'react';
+    const  reducer = (state, action) => {
+     // ...
+    }
+    const MyComponent = () => {
+      const [state, dispatch] = useReducer(reducer, initialState);
+       // ...
+  ```     
+- Now you can call dispatch with action type and data to set state within the app.
+  ```jsx
+    function handleClick() {
+    dispatch({ type: 'action_name' });
+   }
+  ```
+- Now React will pass the current state and the action to your reducer function. Your reducer will calculate and return the next state. React will store that next state, render your component with it, and update the UI.  
 ### Comparision of useState and useReducer 
   ```jsx
     const [state, setState] = useState(initialValue);
