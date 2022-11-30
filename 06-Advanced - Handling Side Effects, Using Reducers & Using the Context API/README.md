@@ -99,7 +99,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
       const [state, dispatch] = useReducer(reducer, initialState);
        // ...
   ```     
-- Now you can call dispatch with action type and data to set state within the app.
+- Now you can call dispatch with action type and data/payload to set state within the app.
   ```jsx
     function handleClick() {
     dispatch({ type: 'action_name' });
@@ -108,7 +108,10 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - Now React will pass the current state and the action to your reducer function. Your reducer will calculate and return the next state. React will store that next state, render your component with it, and update the UI.  
 #### Example
   ```jsx
+    // Importing useReducer
     import { useReducer } from "react";
+    
+    //reducer function before the component function
     const myReducer = (state, action) => {
       if (action.type === "incremented_age") {
         return {
@@ -119,12 +122,14 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
     };
 
     const Counter = () => {
+      //calling useReducer at top
       const [state, dispatch] = useReducer(myReducer, { age: 42 });
 
       return (
         <>
           <button
             onClick={() => {
+              //calling dispatch with action type
               dispatch({ type: "incremented_age" });
             }}
           >
