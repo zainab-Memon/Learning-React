@@ -152,4 +152,6 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
   ```
 - As you can see, in both cases the hook returns an array with two elements. 
 - The first is the state, and the second is a function that lets you modify the state: setState for useState, and dispatch for useReducer.
+# Day 11: 1/12/2022
+## useContext
 
