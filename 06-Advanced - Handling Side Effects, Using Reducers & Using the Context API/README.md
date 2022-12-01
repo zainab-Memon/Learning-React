@@ -153,5 +153,9 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - As you can see, in both cases the hook returns an array with two elements. 
 - The first is the state, and the second is a function that lets you modify the state: setState for useState, and dispatch for useReducer.
 # Day 11: 1/12/2022
-## useContext
-
+## React Context API
+- One of the main concept of React is breaking complex components into small reusable components . If these small components need data to work with, you will have to pass data through props from the parent component to the child component. 
+- Passing data through props over and over can cause problems for your application. Sometimes you might pass more props than you need or even forget to pass props that you do need, rename props through the components without noticing, etc. 
+- If you’re passing data through props from the parent component to a fourth- or fifth-level component, you’re not reusing and writing maintainable code, and this might prejudice your application in the future.
+- This is what we call **“prop-drilling.”** This can frustrate and slow down your development in the mid- to long-term—passing props over and over again to your components will cause future problems in your application.
+- The **Context API** can be used to share data with multiple components, without having to pass data through props manually. For example, some use cases the Context API is ideal for: theming, user language, authentication, etc
