@@ -167,7 +167,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 3. import[optional] and create a context like so:
    ```jsx
     import React from "react";
-    const AuthContext = React.createContext();
-    export default AuthContext;
+    const MyContext = React.createContext();
+    export default MyContext;
    ```
 
