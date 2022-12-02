@@ -171,7 +171,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
     export default MyContext;
    ```
 4. Now to use this context you need to setup a context provider and define the data which you want to store.
-   - Any component that needs to listen to this context or use it needs to be wrapped inside the provider component.
+   - Any component that needs the access to the context needs to be wrapped inside the provider component.
    - Context.Provider component available on the context instance is used to provide the context to its child components, no matter how deep they are.
    - The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to  grant access to the context data.
    ```jsx
@@ -179,6 +179,10 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
        <MyChildComponent/>
      <MyContext.Provider/>  
    ``` 
- 5.  Use a context consumer whenever you need the data from the store
+ 5.  After you wrap all the components that are going to need access to the context with the Provider component, you need to tell which component is going to consume that data.
+   - We can do this by either using the consumer or react hook named useContext
+#### Using Consumer 
+       
+       
 
 
