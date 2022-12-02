@@ -1,2 +1,0 @@
-- All of the concepts explained in theory are implemented in this project.
-- Download these code files and merge these with a newly created react project. 
