@@ -160,4 +160,5 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - This is what we call **“prop-drilling.”** This can frustrate and slow down your development in the mid- to long-term—passing props over and over again to your components will cause future problems in your application.
 - The **Context API** can be used to share data with multiple components, without having to pass data through props manually. For example, some use cases the Context API is ideal for: theming, user language, authentication, etc.
 - The React Context API is a way for a React app to effectively produce global variables that can be passed around.
+# Day 12: 2/12/2022
 ### Create Context
