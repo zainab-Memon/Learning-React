@@ -175,14 +175,33 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
    - Context.Provider component available on the context instance is used to provide the context to its child components, no matter how deep they are.
    - The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to  grant access to the context data.
    ```jsx
+   
      <MyContext.Provider value={/* some value */}>  
        <MyChildComponent/>
      <MyContext.Provider/>  
    ``` 
- 5.  After you wrap all the components that are going to need access to the context with the Provider component, you need to tell which component is going to consume that data.
+    5.  After you wrap all the components that are going to need access to the context with the Provider component, you need to tell which component is going to consume that data.
    - We can do this by either using the consumer or react hook named useContext
-      - **Using Context.Consumer** 
-      - **Using Hook**
+   - **Using Context.Consumer**
+       - We’ll need to import the context again and wrap our component with it which injects the context argument in the component. 
+       - Afterward, it’s pretty straight forward. You use context, the same way you would use props. It holds all the values we’ve shared in MyProducer, we just need to use it!
+        ```jsx
+          import React from "react";
+          import MyContext from "../../Mcontext/context";
+          const MyComponent = (props) => {
+            return (
+              <MyContext.Consumer>
+                {(contextData) => {
+                  return (
+                    <ChildComponent myData={contextData.data}/>
+                  );
+                }}
+              </MyContext.Consumer>
+            );
+          };
+          export default MyComponent;
+        ```
+   - **Using Hook**
        
        
 
