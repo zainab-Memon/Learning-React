@@ -164,5 +164,10 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 ### Create Context
 1. Create a folder under your app root named contexts (not required. just a convention)
 2. Create a file named <your context name>Context.js, e.g. userContext.js
-3. import and create a context like so:
+3. import[optional] and create a context like so:
+   ```jsx
+    import React from "react";
+    const AuthContext = React.createContext();
+    export default AuthContext;
+   ```
 
