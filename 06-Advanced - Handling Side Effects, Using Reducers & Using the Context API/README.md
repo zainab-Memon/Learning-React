@@ -171,8 +171,8 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
     export default MyContext;
    ```
 4. Now setup a context provider and define the data which you want to store.
-  - Context.Provider component available on the context instance is used to provide the context to its child components, no matter how deep they are.
-  - The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to  grant access to the context data
+   - Context.Provider component available on the context instance is used to provide the context to its child components, no matter how deep they are.
+   - The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to  grant access to the context data
 5.  Use a context consumer whenever you need the data from the store
 
 
