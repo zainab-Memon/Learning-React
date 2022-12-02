@@ -187,7 +187,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
        - Afterward, it’s pretty straight forward. You use context, the same way you would use props. It holds all the values we’ve shared in MyProducer, we just need to use it!
         ```jsx
           import React from "react";
-          import MyContext from "../../Mcontext/context";
+          import MyContext from "../../MyContext/context";
           const MyComponent = (props) => {
             return (
               <MyContext.Consumer>
