@@ -162,3 +162,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
 - The React Context API is a way for a React app to effectively produce global variables that can be passed around.
 # Day 12: 2/12/2022
 ### Create Context
+1. Create a folder under your app root named contexts (not required. just a convention)
+2. Create a file named <your context name>Context.js, e.g. userContext.js
+3. import and create a context like so:
+
