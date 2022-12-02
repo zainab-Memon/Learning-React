@@ -202,7 +202,19 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
           export default MyComponent;
         ```
    - **Using Hook**
-       
+       - The useContext hook allows us to connect and consume a context. 
+       - The useContext hook receives a single argument, which is the context that you want to have access to.
+       - The useContext is way better and cleaner than the Consumer component
+        ```jsx
+          import React, {useContext} from "react";
+          import MyContext from "../../MyContext/context";
+          const MyComponent = (props) => {
+          const contextData = useContext(MyContext);
+            return (
+              <ChildComponent myData={contextData.data}/> );
+          };
+          export default MyComponent;
+        ```
        
 
 
