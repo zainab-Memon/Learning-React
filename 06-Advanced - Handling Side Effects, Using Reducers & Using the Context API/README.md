@@ -181,7 +181,8 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
    ``` 
  5.  After you wrap all the components that are going to need access to the context with the Provider component, you need to tell which component is going to consume that data.
    - We can do this by either using the consumer or react hook named useContext
-#### Using Consumer 
+      - **Using Context.Consumer** 
+      - **Using Hook**
        
        
 
