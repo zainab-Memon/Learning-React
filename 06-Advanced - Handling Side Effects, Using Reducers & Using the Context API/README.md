@@ -170,4 +170,9 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
     const MyContext = React.createContext();
     export default MyContext;
    ```
+4. Now there are two main steps to use the React context into the React application:
+  1. Setup a context provider and define the data which you want to store.
+  2. Use a context consumer whenever you need the data from the store
 
+Now Context.Provider component available on the context instance is used to provide the context to its child components, no matter how deep they are.
+The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to grant access to the context data
