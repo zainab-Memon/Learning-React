@@ -187,7 +187,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
        - Afterward, it’s pretty straight forward. You use context, the same way you would use props. It holds all the values we’ve shared in MyProducer, we just need to use it!
         ```jsx
           import React from "react";
-          import MyContext from "../../MyContext/context";
+          import MyContext from "../../context/MyContext";
           const MyComponent = (props) => {
             return (
               <MyContext.Consumer>
@@ -207,7 +207,7 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
        - The useContext is way better and cleaner than the Consumer component
         ```jsx
           import React, {useContext} from "react";
-          import MyContext from "../../MyContext/context";
+          import MyContext from "../../context/MyContext";
           const MyComponent = (props) => {
           const contextData = useContext(MyContext);
             return (
@@ -215,6 +215,46 @@ To understand better a component's lifecycle, we can look at the lifecycle of a 
           };
           export default MyComponent;
         ```
-       
+###  Building & Using a Custom Context Provider Component
+- Create an individual Context.js file like this one:
+  ```jsx
+    import React  from "react";
+    // creates context object that will contain a component named MyContext.Provider
+    const MyContext = React.createContext({
+      // code
+    });
+
+    export const MyContextProvider = (props) => {
+      // manage states
+      return (
+        <MyContext.Provider
+          value={{
+            // values
+          }}
+        >
+          {props.children}
+        </MyContext.Provider>
+      );
+    };
+    export default MyContext;
+  ```
+- Now Consume this custom provider in App.js and in other components using useContext or Context.Consumer Method.
+- After that Wrap the App component with MyContextProvider Component in index.js file like this: 
+  ```jsx
+    import React from "react";
+    import ReactDOM from "react-dom/client";
+    import "./index.css";
+    import App from "./App";
+    import { MyContextProvider } from "./context/Mycontext";
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(
+      <React.StrictMode>
+        <MyContextProvider>
+          <App />
+        </MyContextProvider>
+      </React.StrictMode>
+    );
+  ``` 
+
 
 
