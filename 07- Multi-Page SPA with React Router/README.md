@@ -10,3 +10,5 @@
     - Home.js
     - Blogs.js
     - Contact.js
+    - NoPage.js
+- Each file will contain a very basic React component.
