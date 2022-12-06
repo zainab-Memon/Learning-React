@@ -153,3 +153,5 @@
   ```
 - **Output:** <br>
   ![image](https://user-images.githubusercontent.com/88162824/205932397-8e05662e-1aac-433f-8702-b028194db6ba.png)
+- If I click on about link from navbar, we get this: <br>
+  ![image](https://user-images.githubusercontent.com/88162824/205932712-718a05d6-e0e3-41e4-9493-d989916e5afd.png)
