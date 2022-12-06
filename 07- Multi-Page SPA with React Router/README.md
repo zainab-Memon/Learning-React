@@ -89,4 +89,33 @@
   ```
 - **Define Routes:**
 - <Route> renders out the components based on the URL.
+- We have to nest all our <Route> component in <Routes>
+- **path:** Path specifies a pathname we assign to our component.
+- **element:** It refers to the component which will render on matching the path.
+  ```jsx
+    import Nav from "./Nav";
+    import About from "./About";
+    import Shop from "./Shop";
+    import "./App.css";
+    import {BrowserRouter as Router, Switch, Route, Routes} from "react-router-dom";
+     function App() {
+      return (
+        <Router>
+          <div>
+            <Nav />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/shop" element={<Shop />} />
+            </Routes>
+          </div>
+        </Router>
+      );
+    }
 
+    const Home = () => {
+      return <h1>home</h1>;
+    };
+    export default App;
+
+  ```
