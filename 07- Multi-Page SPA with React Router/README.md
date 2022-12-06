@@ -155,3 +155,30 @@
   ![image](https://user-images.githubusercontent.com/88162824/205932397-8e05662e-1aac-433f-8702-b028194db6ba.png)
 - If I click on about link from navbar, we get this: <br>
   ![image](https://user-images.githubusercontent.com/88162824/205932712-718a05d6-e0e3-41e4-9493-d989916e5afd.png)
+## Creating Dynamic Routes
+- This is how you can create dynamic routes:
+  ```jsx 
+    import { Link } from "react-router-dom";
+
+    const Shop = () => {
+      const dummyData = [
+        { id: "m1", item: "item1" },
+        { id: "m2", item: "item2" },
+        { id: "m3", item: "item3" },
+      ];
+      return (
+        <div>
+          <h1>Shop Page</h1>
+          {/* creating dynamic links */}
+          {dummyData.map((data) => (
+            <h2 key={data.id}>
+              <Link to={`/shop/${data.id}`}>{data.item}</Link>
+            </h2>
+          ))}
+        </div>
+      );
+    };
+
+    export default Shop;
+
+  ```
