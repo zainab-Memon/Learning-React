@@ -42,7 +42,7 @@
  ![image](https://user-images.githubusercontent.com/88162824/205910723-772cda68-76a3-4703-8461-e7a5772c8952.png)
 - Therefore to render our components as individual pages we need to use React Routing. 
 ## Using React Routing
-- **Import React Router:**
+### Import React Router
   ```jsx 
     import Nav from "./Nav";
     import About from "./About";
@@ -61,9 +61,9 @@
 
     export default App;
   ```
-  - BrowserRouter is used to add the ability to handle routing in React. 
-  - We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as <Router> in this case. 
-- **Wrap Components:**
+- BrowserRouter is used to add the ability to handle routing in React. 
+- We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as <Router> in this case. 
+### Wrap Components
 - Now we have to wrap those components in <Router> that want to have the ability to use routing.
 - But no visbile change will reflect after it. 
   ```jsx
@@ -87,7 +87,7 @@
     export default App;
 
   ```
-- **Define Routes:**
+### Define Routes
 - <Route> renders out the components based on the URL.
 - We have to nest all our <Route> component in <Routes>, it is used in the replacement of <switch>
 - **path:** Path specifies a pathname we assign to our component.
@@ -119,7 +119,7 @@
     export default App;
 
   ```
-- **Using \<Link>:**
+### Using \<Link>
 - \<Link> is used to set the URL and keep track of browsing history.
 - Here we have Nav.js component that contains the  nav bar, we can set links to different routes here. 
   ```jsx 
