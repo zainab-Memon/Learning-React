@@ -7,6 +7,8 @@
 - So basically routing is a mapping between an URL and the functionality of a web server.
 - Create React App doesn't include page routing.
 - Therefore, **React Router** is the most popular solution.
+- React Router is a standard library for routing in React. 
+- It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
 ## Add React Router
 - To add React Router in your application, run this in the terminal from the root directory of the application:
 - `npm install react-router dom`
@@ -85,4 +87,6 @@
     export default App;
 
   ```
-  
+- **Define Routes:**
+- <Route> renders out the components based on the URL.
+
