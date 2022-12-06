@@ -40,3 +40,25 @@
  ![image](https://user-images.githubusercontent.com/88162824/205910723-772cda68-76a3-4703-8461-e7a5772c8952.png)
 - Therefore to render our components as individual pages we need to use React Routing. 
 ## Using React Routing
+- **Import React Router:**
+  ```jsx 
+    import Nav from "./Nav";
+    import About from "./About";
+    import Shop from "./Shop";
+    import "./App.css";
+    import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+    function App() {
+      return (
+          <div>
+            <Nav />
+            <About />
+            <Shop />
+          </div>
+      );
+    }
+
+    export default App;
+  ```
+  - BrowserRouter is used to add the ability to handle routing in React. 
+  - We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as <Router> in this case. 
+- **Wrap Components:**
