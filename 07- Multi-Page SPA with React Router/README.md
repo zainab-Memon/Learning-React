@@ -89,9 +89,9 @@
   ```
 - **Define Routes:**
 - <Route> renders out the components based on the URL.
-- We have to nest all our <Route> component in <Routes>
+- We have to nest all our <Route> component in <Routes>, it is used in the replacement of <switch>
 - **path:** Path specifies a pathname we assign to our component.
-- **element:** It refers to the component which will render on matching the path.
+- **element:** It refers to the component which will render on matching the path. 
   ```jsx
     import Nav from "./Nav";
     import About from "./About";
@@ -104,7 +104,7 @@
           <div>
             <Nav />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home />} /> // specifies the home page 
               <Route path="/about" element={<About />} />
               <Route path="/shop" element={<Shop />} />
             </Routes>
@@ -117,5 +117,37 @@
       return <h1>home</h1>;
     };
     export default App;
+
+  ```
+- **Using <Link>:**
+- <Link> is used to set the URL and keep track of browsing history.
+- Here we have Nav.js component that contains the  nav bar, we can set links to different routes here. 
+  ```jsx 
+    import { Link } from "react-router-dom";
+    const Nav = () => {
+      return (
+        <div>
+          <nav>
+            <h3>logo</h3>
+
+            <ul className="navLinks">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              {/* we can use both ways, either link tag inside li tag or li tag inside link */}
+              <Link to="/about">
+                <li>About</li>
+              </Link>
+
+              <Link to="/shop">
+                <li>shop</li>
+              </Link>
+            </ul>
+          </nav>
+        </div>
+      );
+    };
+
+    export default Nav;
 
   ```
