@@ -151,3 +151,5 @@
     export default Nav;
 
   ```
+- **Output:** <br>
+  ![image](https://user-images.githubusercontent.com/88162824/205932397-8e05662e-1aac-433f-8702-b028194db6ba.png)
