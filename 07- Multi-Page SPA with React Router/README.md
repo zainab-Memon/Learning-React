@@ -119,8 +119,8 @@
     export default App;
 
   ```
-- **Using <Link>:**
-- <Link> is used to set the URL and keep track of browsing history.
+- **Using \<Link>:**
+- \<Link> is used to set the URL and keep track of browsing history.
 - Here we have Nav.js component that contains the  nav bar, we can set links to different routes here. 
   ```jsx 
     import { Link } from "react-router-dom";
