@@ -2,8 +2,11 @@
 - Worked on a Project **(FOOD ORDER APP)**
 # Day 16: 6/12/22
 ## React Router 
+- A URL is the path to access a functionality. 
+- Routing is like the mechanism to decide which functionality to call based on the provided URL and params. 
+- So basically routing is a mapping between an URL and the functionality of a web server.
 - Create React App doesn't include page routing.
-- React Router is the most popular solution.
+- Therefore, React Router is the most popular solution.
 ## Add React Router
 - To add React Router in your application, run this in the terminal from the root directory of the application:
 ## Folder Structure
