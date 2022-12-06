@@ -62,3 +62,27 @@
   - BrowserRouter is used to add the ability to handle routing in React. 
   - We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as <Router> in this case. 
 - **Wrap Components:**
+- Now we have to wrap those components in <Router> that want to have the ability to use routing.
+- But no visbile change will reflect after it. 
+  ```jsx
+    import Nav from "./Nav";
+    import About from "./About";
+    import Shop from "./Shop";
+    import "./App.css";
+    import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+    function App() {
+      return (
+        <Router>
+          <div>
+            <Nav />
+            <About />
+            <Shop />
+          </div>
+        </Router>
+      );
+    }
+
+    export default App;
+
+  ```
+  
