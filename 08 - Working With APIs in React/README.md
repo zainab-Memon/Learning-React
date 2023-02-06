@@ -17,7 +17,13 @@
 ## Composite APIs: 
 - These allow for multiple endpoints to be accessed with a single API call.
 ## REST (Representational State Transfer) APIs: 
-- These use HTTP requests to POST (create), PUT (update), GET (read), and DELETE (delete) data.
+- REST (Representational State Transfer) APIs are a type of web API that use HTTP requests to interact with data. 
+- They are based on the architectural style of the same name and are designed to be lightweight, fast, and scalable. 
+- REST APIs use standard HTTP methods, such as GET, POST, PUT, and DELETE, to perform operations on resources, represented by URIs (Uniform Resource Identifiers).
+- REST APIs are flexible and can be used with a wide range of programming languages and platforms, making them a popular choice for building modern web applications and APIs. 
+- In RESTful API design, a client sends a request to a server, which returns a response. 
+- The response can be a representation of a resource, such as a JSON or XML document, that the client can use to manipulate or display the data. 
+- The REST API defines a set of rules for creating, reading, updating, and deleting resources.
 ## SOAP (Simple Object Access Protocol) APIs: 
 - These use XML as a format to transmit data, and are well-suited for large complex systems.
 ## RPC (Remote Procedure Call) APIs: 
