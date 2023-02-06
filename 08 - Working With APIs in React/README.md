@@ -85,7 +85,7 @@
  response from the server/backend.
   - Since we need the response to be resolved to a JSON, we call .json() method with the returned response. 
   - Again .json() return a promise, therefore we need to chain another then method to resolve the second promise.
-### Fetching Data in React when a button is clicked
+### Fetching Data in React when a button is clicked (onClick)
 If you want to fetch data conditionally, say when a button is clicked, you can do that as shown below:
 ```jsx
     import React, { useEffect, useState } from "react";
@@ -116,6 +116,8 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
 
     export default App;
 ```
+### Fetching data in React based on user input (onChange)
+
 **Output:** <br>
 ![image](https://user-images.githubusercontent.com/88162824/216964557-64049d1d-1957-4d06-8721-a9e3a5e14cdc.png)
 
