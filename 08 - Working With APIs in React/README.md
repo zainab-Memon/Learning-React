@@ -4,3 +4,6 @@
 - Using an API allows developers to add specific functionalities to their applications and can speed up the development process.
 - There are APIs for nearly every category imaginable from data to travel and even sports. 
 - For example, rather than investing time and resources to create their own payment processing system, many applications use a payment processing API instead.
+- **Example:** <br>
+![image](https://user-images.githubusercontent.com/88162824/216931681-d8792dde-36df-4216-993f-dbe806404b23.png)
+
