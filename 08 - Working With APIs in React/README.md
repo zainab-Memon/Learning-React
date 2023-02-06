@@ -35,3 +35,4 @@
 - **For example**, a social media platform might offer a Web API that allows developers to access data about users, posts, and other entities, or to trigger actions such as posting a new message.
 - Web APIs are typically designed using the REST (Representational State Transfer) or SOAP (Simple Object Access Protocol) architectural style, and can return data in various formats, including JSON and XML. 
 - The use of APIs allows for greater integration and automation of different systems, and is a key part of modern web development.
+# How to Fetch/Call an API with React
