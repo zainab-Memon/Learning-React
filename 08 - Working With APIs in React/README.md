@@ -75,6 +75,8 @@
 
     export default App;
 ```
+**Output:** <br>
+![image](https://user-images.githubusercontent.com/88162824/216964465-eff42b31-8cfa-4dde-aa4e-e52b9687e43b.png)
 - In the above code:
   - We have are using a useEffect hook, which will be executed once the component is mounted. Inside the useEffect hook, we are calling fetchData function.
   - In the fetchData function, we are making the API call to fetch users and set the users to a local state.
@@ -83,7 +85,41 @@
  response from the server/backend.
   - Since we need the response to be resolved to a JSON, we call .json() method with the returned response. 
   - Again .json() return a promise, therefore we need to chain another then method to resolve the second promise.
-## By using Axios library
+### Fetching Data in React when a button is clicked
+If you want to fetch data conditionally, say when a button is clicked, you can do that as shown below:
+```jsx
+    import React, { useEffect, useState } from "react";
+
+    function App() {
+      const [user, setUser] = useState([]);
+
+      const fetchData = () => {
+        return fetch("https://jsonplaceholder.typicode.com/users")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+      };
+      
+      return (
+        <main>
+          <h1>User List</h1>
+          <button onClick={fetchData}>Click Me To Generate List</button>
+          <ul>
+            {user &&
+              user.length > 0 &&
+              user.map((userObj, index) => (
+                <li key={userObj.id}>{userObj.name}</li>
+              ))}
+          </ul>
+        </main>
+      );
+    }
+
+    export default App;
+```
+**Output:** <br>
+![image](https://user-images.githubusercontent.com/88162824/216964557-64049d1d-1957-4d06-8721-a9e3a5e14cdc.png)
+
 ## By using async-await syntax
+## By using Axios library
 ## By using custom hooks
 ## By using React Query
