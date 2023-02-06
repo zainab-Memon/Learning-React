@@ -102,7 +102,7 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
       return (
         <main>
           <h1>User List</h1>
-          <button onClick={fetchData}>Click Me To Generate List</button>
+          <button onClick={fetchData}>Click Me</button>
           <ul>
             {user &&
               user.length > 0 &&
