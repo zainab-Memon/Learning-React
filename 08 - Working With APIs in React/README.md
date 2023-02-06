@@ -37,8 +37,53 @@
 - The use of APIs allows for greater integration and automation of different systems, and is a key part of modern web development.
 # How to Fetch/Call an API with React
 - There are different of fetching data:
-  1. By using Fetch API
-  2. By using Axios library
-  3. By using async-await syntax
-  4. By using custom hooks
-  5. By using React Query
+## By using Fetch API
+- All modern browsers come with an inbuilt fetch Web API, which can be used to fetch data from APIs.
+- The Fetch API through the fetch() method allows us to make an HTTP request to the backend. 
+- With this method, we can perform different types of operations using HTTP methods like the GET method to request data from an endpoint, POST to send data to an endpoint, and more.
+- Since we are fetching data, our focus is the GET method.
+- fetch() requires the URL of the resource we want to fetch and an optional parameter.
+```jsx
+    import React, { useEffect, useState } from "react";
+
+    function App() {
+      const [user, setUser] = useState([]);
+
+      const fetchData = () => {
+        return fetch("https://jsonplaceholder.typicode.com/users")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+      };
+
+      useEffect(() => {
+        fetchData();
+      }, []);
+
+      return (
+        <main>
+          <h1>User List</h1>
+          <ul>
+            {user &&
+              user.length > 0 &&
+              user.map((userObj, index) => (
+                <li key={userObj.id}>{userObj.name}</li>
+              ))}
+          </ul>
+        </main>
+      );
+    }
+
+    export default App;
+```
+- In the above code:
+  - We have are using a useEffect hook, which will be executed once the component is mounted. Inside the useEffect hook, we are calling fetchData function.
+  - In the fetchData function, we are making the API call to fetch users and set the users to a local state.
+  - If users exist, then we are looping through them and displaying their names as a list.
+  - Since the API calls are asynchronous, fetch API returns a Promise. Hence, we chain the then method with a callback, which will be called when we receive the
+ response from the server/backend.
+  - Since we need the response to be resolved to a JSON, we call .json() method with the returned response. 
+  - Again .json() return a promise, therefore we need to chain another then method to resolve the second promise.
+## By using Axios library
+## By using async-await syntax
+## By using custom hooks
+## By using React Query
