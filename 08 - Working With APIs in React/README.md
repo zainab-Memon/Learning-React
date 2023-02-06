@@ -116,11 +116,55 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
 
     export default App;
 ```
-### Fetching data in React based on user input (onChange)
-
 **Output:** <br>
 ![image](https://user-images.githubusercontent.com/88162824/216964557-64049d1d-1957-4d06-8721-a9e3a5e14cdc.png)
+### Fetching data in React based on user input (onChange)
+```jsx
+    import React, { useState, useEffect } from "react";
 
+    function App() {
+      const [input, setInput] = useState("");
+      const [data, setData] = useState([]);
+
+      useEffect(() => {
+        if (input.length > 4) {
+          fetch(`https://jsonplaceholder.typicode.com/users?name=${input}`)
+            .then((response) => response.json())
+            .then((data) => setData(data));
+          console.log(data);
+        }
+      }, [input]);
+
+      const handleOnChange = (e) => {
+        e.preventDefault();
+        setInput(e.target.value);
+      };
+      return (
+        <div>
+          <input type="text" value={input} onChange={handleOnChange} />
+          {data && data.length > 0 && (
+            <ul>
+              {data.map((item) => (
+                <li key={item.id}>
+                  <span>Email: {item.email}</span> &nbsp;Website:{item.website}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      );
+    }
+
+    export default App;
+```
+**Output:** <br>
+![image](https://user-images.githubusercontent.com/88162824/216970841-0be3100f-6036-4839-b27e-267c52e0dc51.png)
+- In this example, we use a state variable input to store the user's input, which is updated using the onChange event of the input field. 
+- The useEffect hook is used to fetch the data based on the input state, and update the data state when the data is received. 
+- The fetch() method is used to retrieve the data from the API, and the response is converted to JSON using response.json(). 
+- The resulting data is then stored in the data state using setData(data). 
+- The input value is passed as a query parameter to the API endpoint. 
+- The [input] dependency in the useEffect hook ensures that the effect only runs when the input value changes.
 ## By using async-await syntax
 ## By using Axios library
 ## By using custom hooks
