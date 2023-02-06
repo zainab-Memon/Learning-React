@@ -211,5 +211,10 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
 - The response.json() method is also awaited, and the resulting data is stored in the data variable.
 - The useEffect hook is used to call the fetchData function when the component is mounted.
 ## By using Axios library
+### Axios Library 
+- Axios is a popular, promise-based HTTP client library for making HTTP requests from JavaScript code, including in a React application. 
+- It provides a simple and consistent interface for making HTTP requests and processing the response data, and can be used with both the client-side (e.g., in a browser) and the server-side (e.g., in a Node.js environment).
+- With Axios, you can make HTTP requests using methods like get, post, put, delete, etc., and easily access the response data using the .data property of the response object. 
+- There is a difference between these two as in fetch() we have to convert the result to a JSON object but in Axios it already returns the result as a JSON object, so we don’t need to convert it.
 ## By using custom hooks
 ## By using React Query
