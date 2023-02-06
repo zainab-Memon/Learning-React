@@ -221,6 +221,41 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
 ```jsx
     npm install axios
 ```
+- **Code**:
+```jsx
+    import axios from "axios";
+    import React, { useEffect, useState } from "react";
+
+    const App = () => {
+      const [users, setUsers] = useState([]);
+
+      const fetchData = () => {
+        axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
+          setUsers(response.data);
+        });
+      };
+
+      useEffect(() => {
+        fetchData();
+      }, []);
+
+      return (
+        <div>
+          {users.length > 0 && (
+            <ul>
+              {users.map((user) => (
+                <li key={user.id}>{user.name}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      );
+    };
+
+    export default App;
+```
+**Output**: <br>
+![image](https://user-images.githubusercontent.com/88162824/216989607-f6269190-44c0-4293-b89e-bcf66804fea6.png)
 
 ## By using custom hooks
 ## By using React Query
