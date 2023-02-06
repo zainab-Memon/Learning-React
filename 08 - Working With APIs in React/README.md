@@ -166,6 +166,50 @@ If you want to fetch data conditionally, say when a button is clicked, you can d
 - The input value is passed as a query parameter to the API endpoint. 
 - The [input] dependency in the useEffect hook ensures that the effect only runs when the input value changes.
 ## By using async-await syntax
+```jsx
+    import React, { useState, useEffect } from "react";
+
+    function App() {
+      const [input, setInput] = useState("");
+      const [data, setData] = useState([]);
+
+      useEffect(() => {
+        const fetchData = async () => {
+          const response = await fetch(
+            `https://jsonplaceholder.typicode.com/users?name=${input}`
+          );
+          const data = await response.json();
+          setData(data);
+        };
+
+        fetchData();
+      }, [input]);
+      const handleOnChange = (e) => {
+        e.preventDefault();
+        setInput(e.target.value);
+      };
+      return (
+        <div>
+          <input type="text" value={input} onChange={handleOnChange} />
+          {data.length > 0 && (
+            <ul>
+              {data.map((item) => (
+                <li key={item.id}>{item.name}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      );
+    }
+
+    export default App;
+
+```
+- In this example, we have a React component that fetches data from an API when the component is mounted. 
+- The fetchData function is declared with the async keyword, and it uses the fetch API to retrieve data from the API. 
+- The await keyword is used to wait for the result of the fetch method, and the response is stored in the response variable. 
+- The response.json() method is also awaited, and the resulting data is stored in the data variable.
+- The useEffect hook is used to call the fetchData function when the component is mounted.
 ## By using Axios library
 ## By using custom hooks
 ## By using React Query
