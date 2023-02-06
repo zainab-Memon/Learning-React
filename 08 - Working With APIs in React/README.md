@@ -36,3 +36,9 @@
 - Web APIs are typically designed using the REST (Representational State Transfer) or SOAP (Simple Object Access Protocol) architectural style, and can return data in various formats, including JSON and XML. 
 - The use of APIs allows for greater integration and automation of different systems, and is a key part of modern web development.
 # How to Fetch/Call an API with React
+- There are different of fetching data:
+  1. By using Fetch API
+  2. By using Axios library
+  3. By using async-await syntax
+  4. By using custom hooks
+  5. By using React Query
