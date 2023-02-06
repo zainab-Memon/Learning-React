@@ -28,3 +28,10 @@
 - These use XML as a format to transmit data, and are well-suited for large complex systems.
 ## RPC (Remote Procedure Call) APIs: 
 - These allow for communication between a client and a server, and are typically used for small, simple systems.
+#  Web API 
+- A Web API is a type of API that can be accessed over the internet using standard web protocols, such as HTTP or HTTPS. 
+- It allows for communication between two separate systems, typically a client (such as a web browser or mobile application) and a server, enabling the client to retrieve data or trigger a function in the server.
+- Web APIs are used to provide access to the functionality of an application or service to developers and other users. 
+- **For example**, a social media platform might offer a Web API that allows developers to access data about users, posts, and other entities, or to trigger actions such as posting a new message.
+- Web APIs are typically designed using the REST (Representational State Transfer) or SOAP (Simple Object Access Protocol) architectural style, and can return data in various formats, including JSON and XML. 
+- The use of APIs allows for greater integration and automation of different systems, and is a key part of modern web development.
