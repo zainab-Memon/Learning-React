@@ -62,8 +62,9 @@
 - Named exports are constructed using curly braces. Default exports are not. <br>
 ![image](https://user-images.githubusercontent.com/88162824/202528332-8ca703dd-4626-43db-bd48-be415c58e98c.png)
 - When importing named exports, you can also import all named exports at once with the following syntax:
-- import * as upToYou from './path/to/file.js
-- 
+```jsx
+   import * as upToYou from './path/to/file.js;
+```   
 ## Day 2: 18/11/2022
 ### Classes
 - Classes are blueprints / templates for objects.
