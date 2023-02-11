@@ -88,7 +88,7 @@
 
   ```
 ### Define Routes
-- <Route> renders out the components based on the URL.
+- \<Route> renders out the components based on the URL.
 - We have to nest all our <Route> component in <Routes>, it is used in the replacement of <switch>
 - **path:** Path specifies a pathname we assign to our component.
 - **element:** It refers to the component which will render on matching the path. 
