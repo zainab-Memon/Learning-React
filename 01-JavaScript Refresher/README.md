@@ -6,9 +6,11 @@
 - It is well-known for the development of web pages, many non-browser environments also use it
 ### Syntax 
 - We can place js script in head, body or in external files with .js extension <br>
-<script> <br>
-  // JavaScript Code <br />
-</script> 
+```jsx
+  <script> 
+    // JavaScript Code <br />
+  </script> 
+```
 ### Variables
 - Variables in JavaScript are used to store values, such as numbers, strings, arrays, and objects.
 - JavaScript uses the keywords var, let and const to declare variables.
@@ -26,10 +28,12 @@
 ### JS Functions 
 - A JavaScript function is a block of code designed to perform a particular task.
 - A JavaScript function is executed when "something" invokes it (calls it).
-- Syntax: <br>
-  function name(parameter1, parameter2, parameter3) { <br>
-  // code to be executed <br />
+- **Syntax:** 
+```jsx
+  function name(parameter1, parameter2, parameter3) {
+  // code to be executed
 }
+```
 #### Arrow Function 
 - Arrow functions allow us to write shorter function syntax:
 -  Syntax: <br>
