@@ -10,7 +10,10 @@
   // JavaScript Code <br />
 </script> 
 ### Variables
+- Variables in JavaScript are used to store values, such as numbers, strings, arrays, and objects.
 - JavaScript uses the keywords var, let and const to declare variables.
+#### var
+- The var keyword is used to declare a variable with function scope, meaning the variable is accessible within the function in which it is declared and in any nested functions.
 #### Let 
 - Variables defined with let cannot be Redeclared.
 - Variables defined with let must be Declared before use.
