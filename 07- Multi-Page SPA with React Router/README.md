@@ -62,9 +62,9 @@
     export default App;
   ```
 - BrowserRouter is used to add the ability to handle routing in React. 
-- We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as <Router> in this case. 
+- We have to wrap all the components that we want the routing functionality to be available in with the browserrouter that I have named as \<Router> in this case. 
 ### Wrap Components
-- Now we have to wrap those components in <Router> that want to have the ability to use routing.
+- Now we have to wrap those components in \<Router> that need to use routing.
 - But no visbile change will reflect after it. 
   ```jsx
     import Nav from "./Nav";
