@@ -96,7 +96,7 @@
 ![image](https://user-images.githubusercontent.com/88162824/202767952-81eb0a7f-9c44-49bc-b775-22bcd071fb9a.png)
 ### Destructuring 
 - The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
-- Example:  <br>
+- **Example:**  <br>
 ![image](https://user-images.githubusercontent.com/88162824/202774566-053f6478-075f-4bc6-a877-6511fdfc54a5.png)
 ## Day 3: 19/11/2022
 ### Primitive Data Types 
