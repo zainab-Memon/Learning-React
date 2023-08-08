@@ -91,6 +91,7 @@
 ### Spread and Rest Operator 
 - The spread operator is extremely useful for cloning arrays and objects.Since both are reference types (and not primitives), copying them safely (i.e. preventing future mutation of the copied original)can be tricky. 
 - With the spread operator you have an easy way of creating a (shallow!) clone of the object or array.
+- The spread operator is used to "spread" elements from an iterable (like an array or object) into another array, object, or function call.
 ![image](https://user-images.githubusercontent.com/88162824/202767444-9a8c71fd-7302-4c62-b475-6e24520b5e98.png)
 - Example: <br>
 ![image](https://user-images.githubusercontent.com/88162824/202767952-81eb0a7f-9c44-49bc-b775-22bcd071fb9a.png)
