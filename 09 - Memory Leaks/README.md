@@ -17,40 +17,41 @@
 - The preferred way of cancelling a request would be to use the <b>AbortController</b> as described in the Web API documentation.
 - The AbortController will allow us to abort the web request by passing the AbortSignal to the fetch method and then calling abort before the component is unmounted.
 #### Example
-```jsx
-    import React, { useEffect } from 'react';
+     ```jsx
+        import React, { useEffect } from 'react';
+        
+        function ShameelComponent() {
+          useEffect(() => {
+            const controller = new AbortController();
+            const signal = controller.signal;
+        
+            const fetchData = async () => {
+              try {
+                const response = await fetch("your-api-url", { signal });
+                const data = await response.json();
+                // Process your data here
+              } catch (error) {
+                if (error.name === 'AbortError') {
+                  console.log('Request aborted'); // Handle aborted request
+                } else {
+                  console.error('Error:', error);
+                }
+              }
+            };
+        
+            fetchData();
+        
+            return () => {
+              controller.abort(); // Abort the request when the component unmounts
+            };
+          }, []);
+        
+          return (
+            // Your component's content
+          );
+        }
     
-    function ShameelComponent() {
-      useEffect(() => {
-        const controller = new AbortController();
-        const signal = controller.signal;
-    
-        const fetchData = async () => {
-          try {
-            const response = await fetch("your-api-url", { signal });
-            const data = await response.json();
-            // Process your data here
-          } catch (error) {
-            if (error.name === 'AbortError') {
-              console.log('Request aborted'); // Handle aborted request
-            } else {
-              console.error('Error:', error);
-            }
-          }
-        };
-    
-        fetchData();
-    
-        return () => {
-          controller.abort(); // Abort the request when the component unmounts
-        };
-      }, []);
-    
-      return (
-        // Your component's content
-      );
-    }
+        export default ShameelComponent;
+     ```
 
-export default ShameelComponent;
-```
 - The magic happens in the cleanup function of useEffect. When your component unmounts, the controller.abort() method is called, gracefully aborting any ongoing API request. No more memory leaks or race conditions! 🧹
