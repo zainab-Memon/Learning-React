@@ -17,7 +17,7 @@
 - The preferred way of cancelling a request would be to use the <b>AbortController</b> as described in the Web API documentation.
 - The AbortController will allow us to abort the web request by passing the AbortSignal to the fetch method and then calling abort before the component is unmounted.
 #### Example
-``` html
+```html
     import React, { useEffect } from 'react';
     
     function ShameelComponent() {
