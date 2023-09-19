@@ -1,0 +1,2 @@
+# What are Memory Leaks?
+Memory leaks are a common source of performance issues and instability in JavaScript applications. A memory leak occurs when a Node.js program fails to release memory that it no longer needs, causing the program to consume more and more memory over time. This can lead to poor performance, slow response times, and ultimately, cause the application and other applications to crash.
