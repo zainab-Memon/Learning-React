@@ -53,3 +53,4 @@
 
 export default ShameelComponent;
 ```
+- The magic happens in the cleanup function of useEffect. When your component unmounts, the controller.abort() method is called, gracefully aborting any ongoing API request. No more memory leaks or race conditions! 🧹
